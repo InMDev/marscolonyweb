@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #50d8af;
+  background: #fff;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #50d8af;
+  color: #fff;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0c2e8a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #50d8af;
+  color: #fff;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #50d8af;
+  color: #fff;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -402,12 +402,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #C14344;
 }
 #hero .hero-content .btn-projects {
-  background: #50d8af;
-  border: 2px solid #50d8af;
+  background: #fff;
+  border: 2px solid #fff;
 }
 #hero .hero-content .btn-projects:hover {
   background: none;
-  color: #50d8af;
+  color: #fff;
 }
 #hero .hero-slider {
   z-index: 8;
@@ -484,7 +484,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #50d8af;
+  background: #fff;
   bottom: 0;
   left: 0;
 }
@@ -543,7 +543,7 @@ section {
 /* About Section
 --------------------------------*/
 #about {
-  padding: 60px 0 30px 0;
+  padding: 0px 0 120px 0;
 }
 #about .about-img {
   overflow: hidden;
@@ -558,13 +558,14 @@ section {
   }
   #about .about-img img {
     margin-left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }
 #about .content h2 {
   color: #fff;
   font-weight: 700;
   font-size: 55px;
+  margin-bottom: 30px; 
   font-family: "Roboto", sans-serif;
   font-style: Bold;
 }
@@ -586,14 +587,14 @@ section {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #50d8af;
+  color: #fff;
 }
 #about .content ul {
   list-style: none;
   padding: 0;
 }
 #about .content ul li {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 /* Clients Section
@@ -653,7 +654,7 @@ section {
 }
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #50d8af;
+  background: #fff;
 }
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -675,7 +676,7 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #50d8af;
+  background: #fff;
   padding: 15px 20px;
 }
 #portfolio .portfolio-item .portfolio-info h4 {
@@ -728,10 +729,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #50d8af;
+  border: 1px solid #fff;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #50d8af;
+  background-color: #fff;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -829,10 +830,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #50d8af;
+  border: 1px solid #fff;
 }
 #testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #50d8af;
+  background-color: #fff;
 }
 
 /*FAQ Section
@@ -1007,21 +1008,21 @@ ul {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #C14344;
+  color: #fff;
 }
 #contact .contact-info address, #contact .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #fff;
 }
 #contact .contact-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #fff;
 }
 #contact .contact-info a {
-  color: #000;
+  color: #c1c1c1;
 }
 #contact .contact-info a:hover {
   color: #C14344;
@@ -1039,115 +1040,4 @@ ul {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
-}
-#contact #google-map {
-  height: 290px;
-  margin-bottom: 20px;
-}
-@media (max-width: 576px) {
-  #contact #google-map {
-    margin-top: 20px;
-  }
-}
-#contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-#contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-#contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-#contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #C14344;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-#contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-#contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #C14344;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-#contact .php-email-form input, #contact .php-email-form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-}
-#contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #C14344;
-}
-#contact .php-email-form button[type=submit] {
-  background: #C14344;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-#contact .php-email-form button[type=submit]:hover {
-  background: #C14344;
-}
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  background: #f2f5f8;
-  padding: 0 0 30px 0;
-  font-size: 14px;
-}
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #555;
-}
-#footer .credits a {
-  color: #0c2e8a;
 }
