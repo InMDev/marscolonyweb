@@ -676,7 +676,7 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #C14344;
   padding: 15px 20px;
 }
 #portfolio .portfolio-item .portfolio-info h4 {
