@@ -894,9 +894,9 @@ ul {
   list-style: none;
 }
 .faq {
-  padding: 120px 0 90px;
+  padding: 50 0 0 0;
   background: #f7fbff;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .faq .section-title {
@@ -995,7 +995,7 @@ ul {
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 30px 0 0 0;
+  padding: 10 0 0 10;
 }
 #team .member {
   text-align: center;
