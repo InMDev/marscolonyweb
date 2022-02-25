@@ -574,7 +574,7 @@ section {
   margin-left: -15px;
   max-width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   #about .about-img {
     height: auto;
   }
@@ -582,6 +582,9 @@ section {
     margin-left: 0;
     padding-bottom: 40px;
   }
+}
+#about .content {
+  margin-left: 5%;
 }
 #about .content h2 {
   color: #fff;
