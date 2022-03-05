@@ -359,7 +359,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   position: relative;
   background: url("../img/hero-carousel/1.jpg") no-repeat;
   background-size: cover;
@@ -383,10 +383,10 @@ h6 {
   margin-bottom: 30px;
   font-family: "Raleway", sans-serif;
   font-style: Regular;
-  font-size: 24px;
+  font-size: 50px;
 }
 #hero .hero-content h2 span {
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Raleway", sans-serif;
   color: white;
 }
@@ -394,7 +394,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-style: Bold;
   font-weight: 750;
-  font-size: 75px;
+  font-size: 100px;
   color: white;
 }
 @media (max-width: 767px) {
@@ -433,7 +433,7 @@ h6 {
 }
 #hero .hero-slider {
   z-index: 8;
-  height: 60vh;
+  height: 100vh;
 }
 #hero .hero-slider::before {
   content: "";
