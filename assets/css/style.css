@@ -1,7 +1,7 @@
 body {
   color: #444;
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(-45deg, #c14344, #40152a, #ee8e6b, #241721);
+  background: linear-gradient(-45deg, #660708, #a4161a, #9e2a2b, #e5383b);
   background-size: 400% 400%;
   animation: grad 15s ease infinite;
 }
@@ -365,6 +365,7 @@ h6 {
   background-size: cover;
   padding: 0;
 }
+
 #hero .hero-content {
   position: absolute;
   bottom: 0;
@@ -479,8 +480,8 @@ section {
 }
 .section-header h0 span {
   font-size: 32px;
-  color: #ffcc00;
-  font-style: italic;
+  color: #ffc400;
+  font-style: bold;
   position: relative;
   padding-bottom: 20px;
 }
@@ -495,7 +496,7 @@ section {
 }
 .section-header h2 span {
   font-size: 32px;
-  color: #ffcc00;
+  color: #f1c40f;
   font-style: italic;
   position: relative;
   padding-bottom: 20px;
@@ -565,7 +566,7 @@ section {
 /* About Section
 --------------------------------*/
 #about {
-  padding: 0px 0 120px 0;
+  padding: auto;
 }
 #about .about-img {
   overflow: hidden;
