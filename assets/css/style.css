@@ -923,6 +923,7 @@ ul {
   border: none;
   border-radius: 10px;
   padding: 0;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .faq .accordion .card .card-header h5 {
@@ -1016,9 +1017,12 @@ ul {
   color: #fff;
   padding: 15px;
   border-radius: 0 0 3px 3px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
 }
 #team .member h4 {
   font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   margin-bottom: 2px;
   font-size: 18px;
 }
