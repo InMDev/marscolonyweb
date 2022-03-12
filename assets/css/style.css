@@ -1,20 +1,8 @@
 body {
   color: #444;
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(-45deg, #660708, #a4161a, #9e2a2b, #e5383b);
+  background: #9e2a2b;
   background-size: 400% 400%;
-  animation: grad 15s ease infinite;
-}
-@keyframes grad {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 a {
@@ -84,7 +72,7 @@ h6 {
   background: #fff;
   border-bottom: 1px solid #eee;
   font-size: 14px;
-  padding: 0;
+  padding: auto;
   height: 40px;
 }
 #topbar .contact-info i {
@@ -133,8 +121,6 @@ h6 {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  animation: fadeIndown 1.5s ease-in both;
-  animation-delay: 0.25s;  
 }
 
 #header #logo h1 a {
@@ -207,51 +193,6 @@ h6 {
 .navbar li:hover > a {
   color: #c14344;
 }
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-}
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #fff;
-}
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -262,8 +203,6 @@ h6 {
 }
 
 #navlist li{
-  animation: fadeIndown 1.5s ease-in both;
-  animation-delay: 0.25s;  
 }
 
 @keyframes fadeIndown {
@@ -397,17 +336,6 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.25s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: cubic-bezier(0, 0.25, 0.55, 1);
-  -webkit-animaiton-fill-mode: forwards;
-  animation-name: rise;
-  animation-duration: 1s;
-  animation-delay: 0.25s;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0, 0.25, 0.55, 1);
-  animation-fill-mode: forwards;
 }
 
 #hero .hero-content h2 {
