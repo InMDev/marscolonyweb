@@ -478,13 +478,14 @@ section {
 
 #about .about-img {
   position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  margin-bottom: 20px;
+  padding-bottom: 56.2%;
+  margin-bottom: 20px ;
 }
 
 #about .about-img .responsive-iframe {
   position: absolute;
+  object-fit: cover;
+  text-align: center;
   top:0;
   left:0;
   right:0;
