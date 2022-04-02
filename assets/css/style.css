@@ -776,7 +776,7 @@ ul {
   -webkit-box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
   box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
   font-family: "montserrat", sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-size: auto;
   border-radius: 0 0 10px 10px;
   padding-top: 0;
@@ -784,7 +784,7 @@ ul {
   padding-left: 72px;
   padding-right: 10px;
   padding-bottom: 23px;
-  color: rgba(30, 48, 86, 0.8);
+  color: #000000;
   line-height: 30px;
 }
 /* Our Team Section
