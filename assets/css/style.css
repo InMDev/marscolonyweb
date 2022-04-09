@@ -2,7 +2,7 @@ body {
   color: #444;
   font-family: "Open Sans", sans-serif;
   background: #9e2a2b;
-  background-size: 400% 400%;
+  background-image: url("../img/background.jpg");
 }
 
 a {
