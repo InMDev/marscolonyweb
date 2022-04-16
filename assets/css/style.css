@@ -370,7 +370,7 @@ section {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 30px;
+  margin: 0px 40px 60px 60px;
 }
 .section-header h0 {
   font-family: "Roboto", sans-serif;
@@ -470,7 +470,9 @@ section {
 --------------------------------*/
 #about {
   padding: auto;
-  background-image: url("/assets/img/bg2.png");
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #about .about-img {
   overflow: hidden;
@@ -576,7 +578,9 @@ section {
 --------------------------------*/
 #portfolio {
   padding: 30px 0;
-  background-image: url("/assets/img/bg2.png");
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #portfolio .section-header {
   margin-bottom: auto;
@@ -720,8 +724,7 @@ ul {
 }
 
 .faq .accordion .card .card-header h5 button {
-  color: #1e3056;
-  font-size: auto;
+  font-size: small;
   font-weight: 500;
   text-decoration: none;
   padding: 0 30px 0 70px;
@@ -730,8 +733,9 @@ ul {
   width: 100%;
   color: #fff;
   text-align: left;
-  background: #c14344;
-  background-image: url("/assets/img/bg2.png");
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
   box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
   border-radius: 10px 10px 0 0;
@@ -759,8 +763,9 @@ ul {
 }
 
 .faq .accordion .card .card-header h5 button.collapsed {
-  background: #c14344;
-  background-image: url("/assets/img/bg2.png");
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -838,7 +843,9 @@ ul {
 --------------------------------*/
 #contact {
   padding: 30px 0;
-  background-image: url("/assets/img/bg2.png");
+  background-image: url("/assets/img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #contact .contact-info {
   margin-bottom: 20px;
