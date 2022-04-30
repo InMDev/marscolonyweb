@@ -31,6 +31,7 @@ Some things you need to know:
 To View Different Devices Display
 - Step 1 Right click and inspect element
 - Step 2 **CTRL+SHIFT+M** to view different screen size
+- Step 3 You can change the screen size on the corner left
 
 ## Sponsor
 
