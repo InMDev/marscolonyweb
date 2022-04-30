@@ -19,7 +19,12 @@ Some things you need to know:
 
 ## File
 
-- The main page is located at `index.html` using the css file located at the C:\Users\inzag\Documents\Code\mc\marscolonyweb\assets\css
+- This is the `README.md` file
+- The main page is located at `index.html` the reason is by default when opening a page it locates either index.html or main.html
+- Assets that every page use is located at *\assets\css*, some additional photos are on the *LatestProject* and *PastProject* folder
+- Sitemap is at the `sitemap.xml` which is used for the search engine Console
+- Every project is under the `.html` format i.e. `farming.html`, `sabatier.html` and `helios.html`
+- Sponsorship Guide can be edited on [canva](https://www.canva.com/design/DAE9bTPxnRs/bJoOaCdTSbuMORYpQv7heg/edit?utm_content=DAE9bTPxnRs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and the file is named `SponsorshipGuide22.pdf`
 
 ## Tests
 
