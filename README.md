@@ -34,11 +34,16 @@ To View Different Devices Display
 
 ## Sponsor
 
-Start by copying
+1. Start by copying the code below
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
     ```
+    <div class="swiper-slide"><img src="[Location of Sponsor Image with File Type]" class="img-fluid" alt=""></div>
+    ```
+2. Look for the Client Section at `index.html` and below the other *swiper-slide* class, create a new line then paste the code above
+3. Don't forget to replace the *[Location of Sponsor Image with File Type]* to the respective file location of the image
+4. Go on [canva](https://www.canva.com/design/DAE9bTPxnRs/bJoOaCdTSbuMORYpQv7heg/edit?utm_content=DAE9bTPxnRs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and Add a new sponsor on the last page
+5. Once done, On canvas click share Save as pdf, then replace the old file of the sponsorship to the main website folder.
+6. Don't forget to push the changes at the main branch
 
 ## Project
 
