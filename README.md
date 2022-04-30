@@ -28,7 +28,9 @@ Some things you need to know:
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+To View Different Devices Display
+- Step 1 Right click and inspect element
+- Step 2 **CTRL+SHIFT+M** to view different screen size
 
 ## Sponsor
 
@@ -46,8 +48,5 @@ If your project has a lot of features, list them here.
 
 ## Credits
 
-Inzaghi Moniaga
-https://github.com/InMDev
-
-Patrick
-https://github.com/typer234
+[Inzaghi](https://github.com/InMDev)
+[Patrick](https://github.com/typer234)
