@@ -81,6 +81,7 @@ To View Different Devices Display
 To close Recruitment:
 2. Replace the sentence between the `<Span></Span>` to "Recruitment Closed"
 3. add `<!--` before and `-->` after this code
+
 ```
 <div data-aos="fade-up" data-aos-delay="200">
         <a href="#about" class="btn-get-started scrollto">Apply Here</a>
@@ -88,6 +89,7 @@ To close Recruitment:
 
 To Open Recruitment:
 2. Delete `<!--` before and `-->` after this code
+
 ```
 <div data-aos="fade-up" data-aos-delay="200">
         <a href="#about" class="btn-get-started scrollto">Apply Here</a>
