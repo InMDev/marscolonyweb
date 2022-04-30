@@ -52,8 +52,7 @@ To View Different Devices Display
 3. Don't forget back in the `index.html` locate the "Portofolio Section"
 4. Copy, edit and paste the code below
 
-    ```
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
+```<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
                           <a href="https://www.ubcmarscompetition.com/">
                               <div class="card-flyer">
                                   <div class="text-box">
@@ -68,7 +67,7 @@ To View Different Devices Display
                               </div>
                           </a>
                       </div>
-     ```
+```
 ## Credits
 
 [Inzaghi](https://github.com/InMDev)
