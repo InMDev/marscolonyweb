@@ -50,24 +50,29 @@ To View Different Devices Display
 1. Start by copying one of the *.html* project page and rename it
 2. Replace all the image and description is very straightforward on the editor
 3. Don't forget back in the `index.html` locate the "Portofolio Section"
-4. Copy, edit and paste the code below
+4. Copy and edit the code below somewhere above the other "col-xs-12 col-sm-6 col-md-6 col-lg-3" classes
 
-```<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
-                          <a href="https://www.ubcmarscompetition.com/">
+```
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
+                          <a href="[name of project].html">
                               <div class="card-flyer">
                                   <div class="text-box">
                                       <div class="image-box">
-                                          <img src="PastProject/untitled-drawing-e1522640716340.png" alt="" />
+                                          <img src="[image location for the project]" alt="" />
                                       </div>
                                       <div class="text-container">
-                                          <h6>Airlock Inauguration</h6>
-                                         <p>Our first highlight project was to design, prototype, and manufacture a functional and collapsible airlock.</p>
+                                          <h6>[project name]</h6>
+                                         <p>[short project description]</p>
                                       </div>
                                   </div>
                               </div>
                           </a>
                       </div>
 ```
+5. Don't forget to edit all the items in square bracket
+6. Push to origin/main and Voila!
+
+
 ## Credits
 
 [Inzaghi](https://github.com/InMDev)
