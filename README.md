@@ -1,5 +1,7 @@
 # UBC Mars Colony Website
 
+![TeamPic](PastProject/teampic.png)
+
 ## Special Documentation for you
 
 Some things you need to know:
