@@ -370,7 +370,7 @@ section {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin: 0px 40px 60px 60px;
+  margin: auto;
 }
 .section-header h0 {
   font-family: "Roboto", sans-serif;
@@ -501,11 +501,9 @@ section {
   }
   #about .about-img img {
     margin-left: 0;
-    padding-bottom: 40px;
   }
 }
 #about .content {
-  margin-left: 5%;
 }
 #about .content h2 {
   color: #fff;
