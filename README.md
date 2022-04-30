@@ -74,11 +74,11 @@ To View Different Devices Display
 5. Don't forget to edit all the items in square bracket
 6. Push to origin/main and Voila!
 
-##Recruitment
+## Recruitment
 
 1. On the `index.html` locate the "hero Section"
 
-###To close Recruitment
+### To close Recruitment
 
 2. Replace the sentence between the `<Span></Span>` to "Recruitment Closed"
 3. add `<!--` before and `-->` after this code
@@ -88,7 +88,7 @@ To View Different Devices Display
         <a href="#about" class="btn-get-started scrollto">Apply Here</a>
 ```
 
-###To Open Recruitment
+### To Open Recruitment
 
 2. Delete `<!--` before and `-->` after this code
 
@@ -101,4 +101,5 @@ To View Different Devices Display
 ## Credits
 
 [Inzaghi](https://github.com/InMDev)
+
 [Patrick](https://github.com/typer234)
