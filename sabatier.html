@@ -11,7 +11,6 @@
 
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
-  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -28,6 +27,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/projects.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 
 <body>
@@ -126,7 +128,7 @@
           </div>
         </div>
         <!-- 3d object
-        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        
         <style>
           a-scene {
             height: 800px;
@@ -135,11 +137,12 @@
         </style>
         <div>
           <a-scene embedded>
-            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-            <a-sky color="#ECECEC"></a-sky>
+            <a-asset>
+              <a-asset-item id="obj1" src="assets/img/3D/airlock.obj"></a-asset-item>
+            </a-asset>
+            <a-entity environment="preset: yavapai; skyColor: #A7C4E2"></a-entity>
+            <a-obj-model src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
+            <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0" ></a-entity>
           </a-scene>
         </div>
       </div>
