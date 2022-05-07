@@ -286,7 +286,8 @@ h6 {
   font-size: 3vw;
 }
 #hero .hero-content h2 span {
-  font-size: 2vw;
+  font-size: 3vh;
+  font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: white;
 }
@@ -301,7 +302,7 @@ h6 {
 #hero .hero-content .btn-get-started,
 #hero .hero-content .btn-projects {
   font-family: "Raleway", sans-serif;
-  font-size: 2vw;
+  font-size: 2vh;
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
@@ -313,7 +314,8 @@ h6 {
 }
 #hero .hero-content .btn-get-started {
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid;
+  border-image: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%) 1;
 }
 #hero .hero-content .btn-get-started:hover {
   background: #fff;
@@ -418,6 +420,29 @@ section {
   padding: 0;
   margin: 0;
 }
+.btn-get-started,
+
+.btn-get-started {
+  background: none;
+  border: 2px solid;
+  border-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: #fff;
+}
+.btn-get-started:hover {
+  background: #fff;
+  color: #c14344;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
