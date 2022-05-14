@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  <header id="header" class="d-flex align-items-center">
+  <header id="header" class="d-flex align-items-center" style="width: 100%">
     <div class="container d-flex justify-content-between">
 
       <div id="logo">
@@ -143,11 +143,13 @@
               <a-asset-item id="obj1" src="assets/img/3D/airlock.obj"></a-asset-item>
             </a-asset>
             <a-entity environment="preset: yavapai; skyColor: #A7C4E2"></a-entity>
-            <a-obj-model src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
-            <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0" ></a-entity>
+            <a-obj-model id="airlockobj" src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
+            <a-entity camera id="maincamera" look-controls wasd-controls="acceleration:100" position="0 1.6 0"></a-entity>
           </a-scene>
         </div>
+        <button style="border: none;color:brown;padding: 15px 32px;width: 100%;background-color: none;" onclick="turnleft()">Rotate Object!</button>
       </div>
+  
     </section>
     <!-- End About Section -->
 
