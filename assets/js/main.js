@@ -3,6 +3,28 @@ function turnleft(){
   
   var scene = document.querySelector('a-scene');
   scene.querySelector('#airlockobj').object3D.rotation.y += Math.PI/2;
+  
+  //for 4 different rotation of airlockobj, print the angle in degree
+  if (scene.querySelector('#airlockobj').object3D.rotation.y == 0 || scene.querySelector('#airlockobj').object3D.rotation.y == 360) {
+    console.log('0');
+  }
+  else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI/2) {
+    console.log('90');
+    scene.querySelector('#airlockobj').object3D.position.z += 4;
+  }
+  else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI) {
+    console.log('180');
+    scene.querySelector('#airlockobj').object3D.position.x += 1.5;
+  }
+  else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI*3/2) {
+    console.log('270');
+  }
+  else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI*2) {
+    console.log('360');
+    scene.querySelector('#airlockobj').object3D.position.z -= 4;
+    scene.querySelector('#airlockobj').object3D.position.x -= 1.5;
+    scene.querySelector('#airlockobj').object3D.rotation.y -= Math.PI*2;
+  }
 }
 
 (function () {
