@@ -144,8 +144,10 @@
             </a-asset>
             <a-entity environment="preset: yavapai; skyColor: #A7C4E2"></a-entity>
             <a-obj-model id="airlockobj" src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
-            <a-entity camera id="maincamera" look-controls wasd-controls="acceleration:100" position="0 1.6 0"></a-entity>
-          </a-scene>
+            <a-text position="-1.8 2.5 -2" rotation="0 0 0" value = "Press [A], [W], [S], [D] to move around" font-size="12px"></a-text>
+            <a-entity movement-controls="fly: true">
+              <a-entity camera id="maincamera" position="0 1.6 0" look-controls></a-entity>
+            </a-entity>          </a-scene>
         </div>
         <button style="border: none;color:brown;padding: 15px 32px;width: 100%;background-color: none;" onclick="turnleft()">Rotate Object!</button>
       </div>
@@ -161,6 +163,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

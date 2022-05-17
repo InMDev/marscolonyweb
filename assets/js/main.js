@@ -17,11 +17,12 @@ function turnleft(){
     scene.querySelector('#airlockobj').object3D.position.x += 1.5;
   }
   else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI*3/2) {
+    scene.querySelector('#airlockobj').object3D.position.z -= 2;
     console.log('270');
   }
   else if (scene.querySelector('#airlockobj').object3D.rotation.y == Math.PI*2) {
     console.log('360');
-    scene.querySelector('#airlockobj').object3D.position.z -= 4;
+    scene.querySelector('#airlockobj').object3D.position.z -= 2;
     scene.querySelector('#airlockobj').object3D.position.x -= 1.5;
     scene.querySelector('#airlockobj').object3D.rotation.y -= Math.PI*2;
   }
