@@ -304,8 +304,8 @@ h6 {
 #hero .hero-slider {
   z-index: 8;
   height: 90vh;
-  -webkit-animation: kenburns-top 5s ease-in reverse both;
-  animation: kenburns-top 5s ease-in reverse both;
+  -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+  animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
 }
 #hero .hero-slider::before {
   content: "";
