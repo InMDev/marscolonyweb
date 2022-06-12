@@ -905,3 +905,17 @@ ul {
     border-right: 1px solid #ddd;
   }
 }
+
+.list-group-item{
+  font-size: medium;
+}
+
+@media (max-width : 576px) {
+  .list-group-item{
+    font-size: small;
+  }
+}
+.list-group-item.active{
+  background-color: #a83939 !important;
+border-color: #a83939;
+}
