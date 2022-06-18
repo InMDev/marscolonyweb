@@ -1091,3 +1091,7 @@ border-color: #a83939;
 #team li{
   font-size: medium;
 }
+
+#gallery {
+  background-image: url(/assets/img/bg2.webp);
+}
