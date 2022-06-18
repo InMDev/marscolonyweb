@@ -832,7 +832,7 @@ ul {
 }
 #team .member h4 {
   font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-bottom: 2px;
   font-size: 18px;
@@ -921,7 +921,7 @@ border-color: #a83939;
 }
 
 #team {
-font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-left: 10%;
   color: #241623;
   background: #eef2f4;

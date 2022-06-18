@@ -1,4 +1,5 @@
 AOS.init();
+
 function turnleft() {
   var scene = document.querySelector("a-scene");
   scene.querySelector("#airlockobj").object3D.rotation.y += Math.PI / 2;
