@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UBC MARS COLONY</title>
+  <title>UBC MARS COLONY | Sabatier Project</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,7 +19,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   
 
@@ -27,13 +26,19 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/projects.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  
-  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <link href="https://unpkg.com/modern-css-reset/dist/reset.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+
+<!-- Script-->
+<link rel="stylesheet" href="assets/css/sabatier/css2.css">
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
-  <header id="header" class="d-flex align-items-center" style="width: 100%">
+  <header id="header" class="d-flex align-items-center" style="width: 100%;">
     <div class="container d-flex justify-content-between">
 
       <div id="logo">
@@ -50,7 +55,7 @@
           <li><a class="nav-link scrollto " href="index.html#portfolio">Latest Project</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#faq">FAQ</a></li>
-          <li><a href="index.html">Contact</ahref></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -69,93 +74,331 @@
 
     <div class="hero-slider swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url('assets/img/LatestProject/sabatier1.png');"></div>
-        <div class="swiper-slide" style="background-image: url('assets/img/LatestProject/sabatier1.png');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/LatestProject/sabatier/Sabatier_3D_Reactor_Design_Small_White.png');"></div>
       </div>
     </div>
 
   </section><!-- End Hero Section -->
+  
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="section-header"style="margin: 0 35px 0 35px;">
+      <h2 data-aos="fade-right">Our <span>Ideas</span></h2>
+      <p data-aos="fade-up" data-aos-delay="100" style="color: aliceblue;">In-situ resource utilization (ISRU) has been identified as a potentially key feature of all proposed Mars
+        missions involving human exploration. The unique atmospheric and geological features on Mars allow for
+        in-situ production of methalox (liquid methane-liquid oxygen) propellant, which would make Mars return
+        missions more feasible. Methalox is easier to handle and store compared to conventional liquid hydrogen
+        propellant. For example, SpaceX has unveiled plans for a reusable launch vehicle, Starship, and the
+        accompanying Mars mission architecture, which relies on in-situ propellant production to supply fuel for
+        the trip back to Earth. Before such a system can be deployed on Mars, a feasibility study and rigorous
+        tests at smaller scales must be conducted on Earth.</p>
+    </div>
+  </div>
+</section><!-- End Portfolio Section -->
 
-  <main id="main">
+<!-- ======= Team Section ======= -->
+<section id="team" class="team">
+  <h1 data-aos="fade-right">Our Team</h1>
+  <p>Hover or focus over each card to see the person’s job title slide in and the colour treatment change.</p>
+  <div class="team" data-aos="fade-up">
+    <ul class="auto-grid" role="list">
+      <li>
+        <a href="https://www.linkedin.com/in/dagan-schoen-4511501b0/?originalSubdomain=ca" target="_blank" class="profile">
+          <h2 class="profile__name">Dagan Schoen</h2>
+          <p>Captain</p>
+          <img src="assets/img/LatestProject/sabatier/dagen.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/hang-zou/" target="_blank" class="profile">
+          <h2 class="profile__name">Hang Zou</h2>
+          <p>Captain</p>
+          <img src="assets/img/LatestProject/sabatier/hang.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/joya-yamagishi/" target="_blank" class="profile">
+          <h2 class="profile__name">Joya Yamagishi</h2>
+          <p>Captain</p>
+          <img src="assets/img/LatestProject/sabatier/joya.png" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/alyona-glazyrina/" target="_blank" class="profile">
+          <h2 class="profile__name">Alyona Glazyrina</h2>
+          <p>Mech Subteam Assistant Lead</p>
+          <img src="assets/img/LatestProject/sabatier/alyona.png" />
+        </a>
+      </li> 
+      <li>
+        <a href="https://www.linkedin.com/in/eldad-zipori-a411a5157/" target="_blank" class="profile">
+          <h2 class="profile__name">Eldad Zeev Zipori</h2>
+          <p>Elec Member</p>
+          <img src="assets/img/LatestProject/sabatier/eldad.png" />
+        </a>
+      </li>
+      <li>
+        <a href="mailto:e.s.rhiannon@gmail.com" target="_blank" class="profile">
+          <h2 class="profile__name">Rhiannon Evans</h2>
+          <p>Mech Member</p>
+          <img src="assets/img/LatestProject/sabatier/rhiannon.png" />
+        </a>
+      </li>
+      <li>
+        <a href="mailto: zhudouglas2003@gmail.com" target="_blank" class="profile">
+          <h2 class="profile__name">Douglas Zhu</h2>
+          <p>Mech Member</p>
+          <img src="assets/img/LatestProject/sabatier/douglas.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- End Team Section -->
+
+<section id="portfolio" class="portfolio">
+
+  
+  <div class="container">
+    <div class="section-header"  style="margin: 0 35px 0 35px;padding-bottom: 30px;">
+      <h2 data-aos="fade-down">Phase <span>1</span></h2>
+        <div class="row">
+          <div class="col-4" data-aos="fade-right">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> ➤ Description</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"> ➤ Factors</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"> ➤ Specs</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"> ➤ Result</a>
+            </div>
+          </div>
+          <div class="col-8" data-aos="fade-left">
+            <div class="tab-content" id="nav-tabContent" style="color: white;">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">UBC Mars Colony’s phase one of this project consisted of the design, construction, and subsequent
+                testing of a demonstration reactor, our Sabatier Fuel Reactor, which is governed by the Sabatier reaction,
+                as well as an investigation into the feasibility of a reactor from an operational perspective.</div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Factors
+                include the complexity of day-to-day operation, maintenance, part replaceability, and others. </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"> The reactor
+                fits within two cubic metres and requires an maximum of 1.8 kilowatts to operate. With custom PCBs to
+                route the signal and control lines of all components, the reactor regulates the reaction within a standard
+                profile and requires only one person to operate.</div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">In-house experimental results are planned to be compared
+                with simulation results to provide guidelines towards future improvements. By the end of phase one, a
+                functional reactor including all core components was ready for long-term operation and served as a baseline
+                towards the next phase. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  </section>
+
+<!-- solution-->
+<section class="c-solutions p-index_section" style="background-color: #fff">
+  <div class="c-solutions_content">
+    <div class="c-heading c-solutions_heading">
+      <div class="c-heading_inner js-heading -normal -position-inside">
+        <h2 class="c-heading_ja js-ja">Our Reactor</h2>
+      </div>
+    </div>
+    <div class="_pc">
+      <ul class="c-solutions_list js-solutions_list">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+        <li class="c-solutions-item c-solutions_item js-solutions_item -active" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
+          <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers.jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
+            <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
+              <img id="pic1" src="assets/img/LatestProject/sabatier/All_Layers.jpg" style="
+              -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+              animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;">
+              <svg viewBox="0 0 202 202" class="c-circle c-solutions-item_icon_circle">
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px;">
+                </circle>
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px; stroke-dashoffset: 0px;">
+                </circle>
+              </svg>
+            </a>
+            <h3 class="c-solutions-item_name">Full Design</h3>
+          </div>
+        </li>
+      </div>
+      <div class="swiper-slide">
+        <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
+          <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer.jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
+            <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
+              <img id="pic2" src="assets/img/LatestProject/sabatier/Top_Layer.jpg" alt="" data-loading="lazy" class="c-solutions-item_icon_svg _pc" style="
+              -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+              animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;">
+              <svg viewBox="0 0 202 202" class="c-circle c-solutions-item_icon_circle">
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px;">
+                </circle>
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px; stroke-dashoffset: 628px;">
+                </circle>
+              </svg>
+            </a>
+            <h3 class="c-solutions-item_name">Pre-heater & Reactor Core</h3>
+          </div>
+        </li>
+      </div>
+    <div class="swiper-slide">
+        <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
+          <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer.jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
+            <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
+              <img id="pic3" src="assets/img/LatestProject/sabatier/Middle_Layer.jpg" alt="" data-loading="lazy" class="c-solutions-item_icon_svg _pc" style="
+              -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+              animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;">
+              <svg viewBox="0 0 202 202" class="c-circle c-solutions-item_icon_circle">
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px;">
+                </circle>
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px; stroke-dashoffset: 628px;">
+                </circle>
+              </svg>
+            </a>
+            <h3 class="c-solutions-item_name">Electronic Control System</h3>
+          </div>
+        </li>
+        </div>
+        <div class="swiper-slide">
+        <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
+          <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer.jpg'">
+            <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
+              <img id="pic4" src="assets/img/LatestProject/sabatier/Bottom_Layer.jpg" style="
+              -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+              animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;">
+              <svg viewBox="0 0 202 202" class="c-circle c-solutions-item_icon_circle">
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px;">
+                </circle>
+                <circle cx="101" cy="101" r="100" fill="transparent" stroke="#bd413f" stroke-width="2" stroke-dasharray="0 628" transform="rotate(-90 101 101)" style="stroke-dasharray: 628, 628px; stroke-dashoffset: 628px;">
+                </circle>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </div>
+    </div>
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #a83939;
+      }
+    </style>
+    <div class="swiper-pagination"></div>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <!-- end of solution-->
+
+<!-- Gallery -->
+<section id="Gallery">
+
+  <div class="container">
+    <div class="section-header"  style="margin: 0 35px 35px 35px;">
+  <h2 data-aos="fade-right" data-aos-delay="100">Gallery</h2>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img data-aos="zoom-in" data-aos-delay="200"
+      src="assets/img/LatestProject/sabatier/2.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img data-aos="zoom-in" data-aos-delay="300"
+      src="assets/img/LatestProject/sabatier/1.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img data-aos="zoom-in" data-aos-delay="200"
+      src="assets/img/LatestProject/sabatier/5.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img data-aos="zoom-in" data-aos-delay="300"
+      src="assets/img/LatestProject/sabatier/3.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img data-aos="zoom-in" data-aos-delay="200"
+      src="assets/img/LatestProject/sabatier/4.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img data-aos="zoom-in" data-aos-delay="300"
+      src="assets/img/LatestProject/sabatier/6.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+</section>
+<!-- Gallery -->
 
     <!-- ======= About Section ======= -->
     <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-12 col-lg-5" data-aos="fade-right" data-aos-delay="100">
-            <div class="col about-img">
-              <div class="slideshow-container" data-aos="fade-down" data-aos-delay="200">
-                    
-                <div class="mySlides fade">
-                  <img src="assets/img/LatestProject/sabatierteam.png">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/img/LatestProject/sabatier1.png">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/img/LatestProject/sabatier2.png">
-                </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div>
-              
-                <script src="assets/js/projects.js"></script>
-          </div>  
-            </div>
-          
-          <div class="col content" data-aos="fade-left" data-aos-delay="200">
-            <h2>Project Description</h2>
-            <h3>Having a reliable source of fuel on Mars is essential to the development of a self-sustainable Martian base. 
-              Through the Sabatier Fuel Plant Project, the team proposes plans for a full-scale propellant production plant, based on SpaceX’s Mars mission architecture.<br></br>
-
-              For Phase 1, the team builded a reactor setup to study parameters of the Sabatier Reaction. 
-              Through this process, they were able to convert carbon dioxide and hydrogen gas to form methane in Mars. 
-              As a result of this, the team was able to combine the methane and oxygen to produce the propellant to send rockets back to Earth. 
-              In Phase 2, the team planed to propose a full-scale fuel production facility and studied other areas to utilize Mars’s resources efficiently.<br></br>
-          
-              When Phase 2 was completed, the team verified and optimized the proposed theoretical design. 
-              They presented their research and results at the International Aeronautical Congress (IAC) in Dubai, U.A.E., 2021.</h3>
+      <div class="row" style="padding-left: 8%;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" data-aos="fade-right" data-aos-delay="100">
+          <div class="col about-img">
+            <img src="assets/img/LatestProject/sabatier/9.png" style="width: 100%; height: 325px">
           </div>
         </div>
-        <!-- 3d object
-        
-        <style>
-          a-scene {
-            height: 800px;
-            width: 100%;
-          }
-        </style>
-        <div>
-          <a-scene embedded>
-            <a-asset>
-              <a-asset-item id="obj1" src="assets/img/3D/airlock.obj"></a-asset-item>
-            </a-asset>
-            <a-entity environment="preset: yavapai; skyColor: #A7C4E2"></a-entity>
-            <a-obj-model src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
-            <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0" ></a-entity>
-          </a-scene>
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:50%;height: 325px;}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://ubcmarscolony.us8.list-manage.com/subscribe/post?u=cbed3f0fc7a2f728e77b83cf4&amp;id=6eb1d2e6b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to our Newsletter for future discovery</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cbed3f0fc7a2f728e77b83cf4_6eb1d2e6b2" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
         </div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+
       </div>
-    </section>
-    End About Section -->
+  </section><!-- End About Section -->
 
-  </main><!-- End #main -->
-
+    </body>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
@@ -164,6 +407,60 @@
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-</body>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    });
+  </script>
+</body>
+<footer class="bg-dark text-center text-white">
+  
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ubcmarscolony/"><i class="fab fa-facebook-f"></i></a>
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ubc_mars_colony?lang=en"><i class="fab fa-twitter"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ubcmarscolony/?hl=en"><i class="fab fa-instagram"></i></a>
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/ubc-mars-colony/"><i class="fab fa-linkedin-in"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://ubcmarscolony.com/">UBCmarscolony.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </html>

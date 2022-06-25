@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="-en" lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <title>ACSL | ACSL Ltd.</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script>
+  // https://github.com/dsktschy/viewport-extra/blob/master/LICENSE.txt
+  ! function(t, i) {
+    "function" == typeof define && define.amd ? define([], i) : "object" == typeof module && module.exports ? module
+      .exports = i() : t.ViewportExtra = i()
+  }("undefined" != typeof self ? self : this, function() {
+    "use strict";
+    var t;
+    return (t = function(t) {
+        if (this.minWidth = this.maxWidth = null, "number" == typeof t) this.minWidth = t;
+        else {
+          if ("object" != typeof t) throw new Error("ViewportExtra requires an argument that is number or object");
+          if ("number" == typeof t.minWidth && (this.minWidth = t.minWidth), "number" == typeof t.maxWidth && (this
+              .maxWidth = t.maxWidth), "number" == typeof this.minWidth && "number" == typeof this.maxWidth && this
+            .minWidth > this.maxWidth) throw new Error(
+            "ViewportExtra requires that maxWidth is not less than minWidth")
+        }
+        this.applyToElement()
+      }).prototype.applyToElement = function() {
+        if ("undefined" != typeof window) {
+          var i = t.createContent(this, window);
+          i && t.element.setAttribute("content", i)
+        }
+      }, t.createContent = function(t, i) {
+        var e, n, r;
+        return e = n = "", r = [], null != t.minWidth && t.minWidth === t.maxWidth ? (e = "width=" + t.minWidth, n =
+            "initial-scale=" + i.innerWidth / t.minWidth) : null != t.minWidth && i.innerWidth < t.minWidth ? (e =
+            "width=" + t.minWidth, n = "initial-scale=" + i.innerWidth / t.minWidth) : null != t.maxWidth && i
+          .innerWidth > t.maxWidth && (e = "width=" + t.maxWidth, n = "initial-scale=" + i.innerWidth / t.maxWidth), [
+            e, n
+          ].forEach(function(t) {
+            t && r.push(t)
+          }), r.join(",")
+      }, t.createElement = function() {
+        var t = document.createElement("meta");
+        return t.setAttribute("name", "viewport"), t.setAttribute("content", "width=device-width,initial-scale=1"),
+          document.head.insertBefore(t, null), t
+      }, t.element = "undefined" == typeof window ? null : document.querySelector('[name="viewport"]') || t
+      .createElement(), t
+  });;
+  (function() {
+    var a = navigator.userAgent;
+    var c = a.indexOf("iPhone") > -1 || (a.indexOf("Android") > -1 && a.indexOf("Mobile") > -1);
+    var b = !c && (a.indexOf("iPad") > -1 || (a.indexOf("Macintosh") > -1 && "ontouchend" in document) || a.indexOf(
+      "Android") > -1);
+    if (b) {
+      new ViewportExtra(1080)
+    }
+  })();
+  window.isCompleteEirDom = false;
+  window.onCompleteEirDom = function() {
+    window.isCompleteEirDom = true;
+  };
+  </script>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="ACSL develops and implements industrial drones into society for use in logistics, infrastructure inspection, disaster prevention and emerging use cases. With a core of our autonomous control technology, we commit to solving social issues with our mission "Liberate Humanity through Technology"">
+  <meta property="og:title" content="ACSL | ACSL Ltd.">
+  <meta property="og:site_name" content="ACSL | ACSL Ltd.">
+  <meta property="og:description" content="ACSL develops and implements industrial drones into society for use in logistics, infrastructure inspection, disaster prevention and emerging use cases. With a core of our autonomous control technology, we commit to solving social issues with our mission "Liberate Humanity through Technology"">
+  <meta property="og:url" content="https://www.acsl.co.jp/en/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.acsl.co.jp/assets/img/meta/OGP.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="">
+  <meta property="twitter:creator" content="">
+  <meta property="twitter:title" content="ACSL | ACSL Ltd.">
+  <meta property="twitter:description" content="ACSL develops and implements industrial drones into society for use in logistics, infrastructure inspection, disaster prevention and emerging use cases. With a core of our autonomous control technology, we commit to solving social issues with our mission "Liberate Humanity through Technology"">
+  <meta property="twitter:image" content="https://www.acsl.co.jp/assets/img/meta/OGP.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.acsl.co.jp/assets/img/meta/touchicon_192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.acsl.co.jp/assets/img/meta/favi.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.acsl.co.jp/assets/img/meta/favi.ico">
+  <link rel="shortcut icon" href="https://www.acsl.co.jp/assets/img/meta/favi.ico">
+  <link rel="alternate" href="https://www.acsl.co.jp/" hreflang="ja" />
+  <link rel="alternate" href="https://www.acsl.co.jp/en/" hreflang="en" />
+          <link rel="preload"
+    href="https://www.acsl.co.jp/assets/img/common/b-h1_sp.jpg"
+    as="image" media="(max-width: 767px)" crossorigin="anonymous">
+  <link rel="preload"
+    href="https://www.acsl.co.jp/assets/img/common/b-h1.jpg" as="image"
+    media="(min-width: 768px)" crossorigin="anonymous">
+    
+    <link rel="canonical" href="https://www.acsl.co.jp/">
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&amp;display=swap">
+  <link rel="stylesheet" href="https://www.acsl.co.jp/assets/css/common.css?v=1">
+  <link rel="stylesheet" href="https://www.acsl.co.jp/assets/css/js/common.css?v=1">
+  <link rel="stylesheet" href="https://www.acsl.co.jp/assets/js/vendor.css?v=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@5.4.5/css/swiper.min.css">
+    
+  
+    
+  <link rel="stylesheet"
+    href="https://www.acsl.co.jp/assets/css/index.css">
+
+    <link rel="stylesheet" href="https://www.acsl.co.jp/assets/css/js/index.css">
+  <link rel="stylesheet" href="https://www.acsl.co.jp/assets/css/js/en/index.css">
+  
+  <script src="https://www.acsl.co.jp/assets/js/vendor.js" defer></script>
+  <script src="https://www.acsl.co.jp/assets/js/lib.js" defer></script>
+  <script src="https://www.acsl.co.jp/assets/js/common.js" defer></script>
+
+      
+    <script src="https://www.acsl.co.jp/assets/js/en/index.js" defer></script>
+    <!-- Google Tag Manager -->
+  <script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-NZ8WK9F');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ8WK9F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="spLandscape _sp"></div>
+<div class="t-layout">
+      <t-header :en="true" type="kv"></t-header>
+      <main class="p-index">
+      <div class="p-index-kv p-index_kv" id="js-kv"><a class="p-index-kv-catch p-index-kv_catch" href="https://www.acsl.co.jp/en/company/">
+            <div class="p-index-kv-catch_text js-text">LIBERATE<br/>HUMANITY<br/>THROUGH<br/>TECHNOLOGY</div>
+            <p class="p-index-kv-catch_link js-link"><span class="js-link_text">OUR MISSION
+                <svg class="p-index-kv-catch_link-icon" role="img" fill="currentColor" width="11" height="10">
+                  <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                  </svg></span></p></a>
+          <p-index-kv-pagination class="p-index-kv_pagination js-pagination" :en="true"></p-index-kv-pagination>
+          <div class="p-index-kv_scroll js-scroll">
+            <div class="p-index-kv_scroll-line js-scroll-line"></div>SCROLL
+          </div>
+          <div class="p-index-kv_loading js-loading"><span class="js-text">LOADING</span><span class="p-index-kv_loading-line js-line"></span></div>
+          <canvas class="js-background p-index-kv_background"></canvas>
+        </div>
+        <div class="p-index_contents" id="js-contents">
+          <div class="p-index_contents-top" id="js-contents_top">
+            <section class="c-news p-index_section -news">
+              <c-heading class="c-news_heading" en="NEWS RELEASE" ja="" position="outside"></c-heading>
+              <ul class="c-news-list js-c-news-list c-news_list">
+                                <li class="js-item"><a class="c-news-list_link js-link" href="https://www.acsl.co.jp/en/news-release/press-release/2111/">
+                  <div class="c-news-list_wrapper">
+                    <div class="c-head">
+                      <div class="c-head_date js-date">2021.12.14</div>
+                      <div class="c-head_category">
+                        <div class="c-head_category_text">PRESS RELEASE</div>
+                      </div>
+                    </div>
+                    <div class="c-news-list_text js-text">ACSL releases Small Aerial Photography Drone “SOTEN”, and initiated taking orders                    </div>
+                  </div>
+                  <div class="c-news-list_icon">
+                    <svg role="img" fill="currentColor" width="11" height="10">
+                      <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="c-news-list_line js-line"></div></a>
+                </li>
+                                <li class="js-item"><a class="c-news-list_link js-link" href="https://www.acsl.co.jp/en/news-release/press-release/1869/">
+                  <div class="c-news-list_wrapper">
+                    <div class="c-head">
+                      <div class="c-head_date js-date">2021.06.01</div>
+                      <div class="c-head_category">
+                        <div class="c-head_category_text">PRESS RELEASE</div>
+                      </div>
+                    </div>
+                    <div class="c-news-list_text js-text">Aeronext, Seino Holdings and ACSL signed capital and business alliance～Three companies announce collaboration on stable supply of aircraft to create an economically rational drone logistics market～                    </div>
+                  </div>
+                  <div class="c-news-list_icon">
+                    <svg role="img" fill="currentColor" width="11" height="10">
+                      <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="c-news-list_line js-line"></div></a>
+                </li>
+                                <li class="js-item"><a class="c-news-list_link js-link" href="https://www.acsl.co.jp/en/news-release/news/1855/">
+                  <div class="c-news-list_wrapper">
+                    <div class="c-head">
+                      <div class="c-head_date js-date">2021.05.12</div>
+                      <div class="c-head_category">
+                        <div class="c-head_category_text">NEWS</div>
+                      </div>
+                    </div>
+                    <div class="c-news-list_text js-text">Consolidated Financial Results for the Year Ended March 31, 2021                    </div>
+                  </div>
+                  <div class="c-news-list_icon">
+                    <svg role="img" fill="currentColor" width="11" height="10">
+                      <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="c-news-list_line js-line"></div></a>
+                </li>
+                                <li class="js-item"><a class="c-news-list_link js-link" href="https://www.acsl.co.jp/en/news-release/press-release/1835/">
+                  <div class="c-news-list_wrapper">
+                    <div class="c-head">
+                      <div class="c-head_date js-date">2021.05.10</div>
+                      <div class="c-head_category">
+                        <div class="c-head_category_text">PRESS RELEASE</div>
+                      </div>
+                    </div>
+                    <div class="c-news-list_text js-text">ACSL、CVC Investments in Aerodyne : The World&#8217;s Leading Drone Solution Provider                    </div>
+                  </div>
+                  <div class="c-news-list_icon">
+                    <svg role="img" fill="currentColor" width="11" height="10">
+                      <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="c-news-list_line js-line"></div></a>
+                </li>
+                              </ul>
+              <div class="c-news_link">
+                <c-button to="https://www.acsl.co.jp/en/news/">VIEW ALL</c-button>
+              </div>
+            </section>
+            <c-solutions class="p-index_section"></c-solutions>
+          </div>
+          <c-business class="p-index_section"></c-business>
+          <section class="p-index-company p-index_section">
+            <c-heading en="COMPANY" ja=""></c-heading>
+            <div class="p-index-company_content">
+              <div class="p-index-company_content-inner">
+                <a class="p-index-company_ceo js-ceo" href="https://www.acsl.co.jp/en/company/executive-message">
+                  <div class="p-index-company_ceo_title">
+                    <div class="p-index-company_ceo_title_en js-en">EXECUTIVE MESSAGE</div>
+                    <div class="p-index-company_ceo_title_ja js-ja">
+                      <div class="p-index-company_ceo_title_line js-line"></div>
+                    </div>
+                  </div>
+                  <div class="p-index-company_ceo_more">
+                    <div class="js-link">READ MORE
+                      <svg class="p-index-company_ceo_more_icon" role="img" fill="currentColor" width="11" height="10">
+                        <use xlink:href="https://www.acsl.co.jp/assets/img/common/svg-symbols.svg#svg-b-icon_arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+                <ul class="p-index-company_link">
+                  <li class="p-index-company_link_item">
+                    <c-button to="https://www.acsl.co.jp/en/company/#board" type="transparent" size="large" size-sp="full">BOARD MEMBER</c-button>
+                  </li>
+                  <li class="p-index-company_link_item">
+                    <c-button to="https://www.acsl.co.jp/en/company/#outline" type="transparent" size="large" size-sp="full">COMPANY OUTLINE</c-button>
+                  </li>
+                  <li class="p-index-company_link_item">
+                    <c-button to="https://www.acsl.co.jp/en/company/#history" type="transparent" size="large" size-sp="full">HISTORY</c-button>
+                  </li>
+                </ul>
+              </div>
+              <div class="c-visual js-c-visual p-index-company_visual">
+                <div class="c-visual_inner">
+                  <div class="c-visual_visual js-visual"><img class="c-visual_image js-image" width="1240" height="860" alt="ACSL代表取締役CEO太田裕朗と代表取締役社長鷲谷聡之" src="https://www.acsl.co.jp/assets/img/top/b-top_ceo_img.jpg">
+
+                    <div class="c-visual_shape js-shape"></div>
+                  </div>
+                </div>
+              </div>
+              <canvas class="p-index-company_background js-c-particle-image" data-img="https://www.acsl.co.jp/assets/img/top/b-top_about_img.jpg" data-img-sp="https://www.acsl.co.jp/assets/img/top/b-top_about_img_sp.jpg" data-width="1400" data-height="710" data-width-sp="375" data-height-sp="600" data-scale-sp="0.65"></canvas>
+            </div>
+          </section>
+          <c-recruit class="p-index_section -recruit"></c-recruit>
+          <section class="p-index-ir-library p-index_section -ir-library">
+            <div class="p-index-ir-library_wrapper">
+              <div class="p-index-ir-library_content">
+                <c-heading en="IR LIBRARY" ja="" type="invert" position="outside"></c-heading>
+                <p class="p-index-ir-library_description">IR-related materials such as the<br>latest financial statements and<br>securities reports</p>
+                <c-button class="p-index-ir-library_more" to="https://www.acsl.co.jp/en/ir/library/" type="transparent">READ MORE</c-button>
+              </div>
+              <ul class="p-index-ir-library_link js-library_link">
+                <li class="p-index-ir-library_link_item js-item">
+                  <c-button-double to="https://www.acsl.co.jp/en/ir/library/" type="transparent" :is-manual="true"><template v-slot:en>FINANCIAL RESULTS</template>
+                  </c-button-double>
+                </li>
+              </ul>
+            </div>
+            <canvas class="p-index-ir-library_background js-c-particle-image" data-img="https://www.acsl.co.jp/assets/img/top/b-top_ir_img.jpg" data-img-sp="https://www.acsl.co.jp/assets/img/top/b-top_ir_img_sp.jpg" data-width="1400" data-height="690" data-width-sp="375" data-height-sp="585" data-scale-sp="0.65"></canvas>
+          </section>
+          <section class="c-ir-news p-index_section -ir-news">
+          <div class="c-ir-news_content">
+              <div class="c-ir-news_inner">
+                <c-heading class="c-ir-news_heading" en="IR NEWS" ja="" position="outside"></c-heading>
+                <!-- E-IR Parts -->
+                <div class="eir" data-area-name="top"></div>
+                <script type="text/javascript" src="/assets/js/ir/eir/eir_en.js" charset="utf-8"></script>
+                <script type="text/javascript">
+                scriptLoader.setSrc(eirPassCore + 'eir_common.js');
+                scriptLoader.load(
+                  function(){ setParts('top');  },
+                  showMaintenanceMessage
+                );
+                </script>
+                <!-- /E-IR Parts -->
+                <div class="c-ir-news_link">
+                  <c-button href="/en/ir/news/">VIEW ALL</c-button>
+                </div>
+
+              </div>
+            </div>
+            <c-ir-link class="c-ir-news_link-list c-ir-link" type="en"></c-ir-link>
+            <div class="c-ir-news_link-ir">
+              <c-button href="https://www.acsl.co.jp/en/ir/">VIEW IR</c-button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <aside>
+        <c-vision en="true"></c-vision>
+      </aside>
+      <t-footer :en="true"></t-footer>
+    </div>
+      <t-menu :en="true"></t-menu>
+ </body>
+ </html>
