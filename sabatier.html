@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UBC MARS COLONY</title>
+  <title>UBC MARS COLONY | Sabatier Project</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,7 +19,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   
 
@@ -32,7 +31,10 @@
 
 <!-- Script-->
 <link rel="stylesheet" href="assets/css/sabatier/css2.css">
-
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -203,6 +205,9 @@
     </div>
     <div class="_pc">
       <ul class="c-solutions_list js-solutions_list">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
         <li class="c-solutions-item c-solutions_item js-solutions_item -active" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
           <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers.jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
             <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
@@ -219,6 +224,8 @@
             <h3 class="c-solutions-item_name">Full Design</h3>
           </div>
         </li>
+      </div>
+      <div class="swiper-slide">
         <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
           <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer.jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
             <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
@@ -235,6 +242,8 @@
             <h3 class="c-solutions-item_name">Pre-heater & Reactor Core</h3>
           </div>
         </li>
+      </div>
+    <div class="swiper-slide">
         <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
           <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer.jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer_(Transparent).jpg'">
             <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
@@ -251,6 +260,8 @@
             <h3 class="c-solutions-item_name">Electronic Control System</h3>
           </div>
         </li>
+        </div>
+        <div class="swiper-slide">
         <li class="c-solutions-item c-solutions_item js-solutions_item" style="will-change: transform, opacity; transform: translate(0px, 0px); opacity: 1;">
           <div class="c-solutions-item_inner js-solutions_item_inner" style="opacity: 1;" onclick="document.getElementById('pic1').src='assets/img/LatestProject/sabatier/All_Layers_(Transparent).jpg';document.getElementById('pic2').src='assets/img/LatestProject/sabatier/Top_Layer_(Transparent).jpg';document.getElementById('pic3').src='assets/img/LatestProject/sabatier/Middle_Layer_(Transparent).jpg';document.getElementById('pic4').src='assets/img/LatestProject/sabatier/Bottom_Layer.jpg'">
             <a class="c-solutions-item_icon" style="transform: translate(0px, 0px);">
@@ -266,6 +277,15 @@
             </a>
           </div>
         </li>
+      </div>
+    </div>
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #a83939;
+      }
+    </style>
+    <div class="swiper-pagination"></div>
+      </div>
       </ul>
     </div>
     </div>
@@ -379,7 +399,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
@@ -388,6 +407,35 @@
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    });
+  </script>
 </body>
 <footer class="bg-dark text-center text-white">
   
