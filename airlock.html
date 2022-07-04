@@ -25,7 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/projects.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
@@ -37,7 +36,6 @@
     <div class="container d-flex justify-content-between">
 
       <div id="logo">
-        <a href="index.html">
           <h1><img src="assets/img/OLD2.png" width="200" height="100" class="d-inline-block align-center" alt=""></h1>
         </a>
       </div>
@@ -50,7 +48,7 @@
           <li><a class="nav-link scrollto " href="index.html#portfolio">Latest Project</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.html#faq">FAQ</a></li>
-          <li><a href="index.html">Contact</ahref></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -83,40 +81,6 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-12 col-lg-5" data-aos="fade-right" data-aos-delay="100">
-            <div class="col about-img">
-              <div class="slideshow-container" data-aos="fade-down" data-aos-delay="200">
-                    
-                <div class="mySlides fade">
-                  <img src="assets/img/PastProject/img_0140-1.jpg">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/img/PastProject/img_0076.jpg">
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/img/PastProject/imag0181.jpg">
-                </div>
-
-                <div class="mySlides fade">
-                  <img src="assets/img/PastProject/untitled-drawing-e1522640716340.png">
-                </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div>
-              
-                <script src="assets/js/projects.js"></script>
-          </div>  
-            </div>
           
           <div class="col content" data-aos="fade-left" data-aos-delay="200">
             <h2>Project Description</h2>
@@ -144,7 +108,6 @@
             </a-asset>
             <a-entity environment="preset: yavapai; skyColor: #A7C4E2"></a-entity>
             <a-obj-model id="airlockobj" src="#obj1" position="-0.65 -1.4 -7" rotation="0 0 0"></a-obj-model>
-            <a-text position="-1.8 2.5 -2" rotation="0 0 0" value = "Press [A], [W], [S], [D] to move around" font-size="12px"></a-text>
             <a-entity movement-controls="fly: true">
               <a-entity camera id="maincamera" position="0 1.6 0" look-controls></a-entity>
             </a-entity>          </a-scene>
