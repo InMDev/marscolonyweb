@@ -416,7 +416,7 @@ body{
 
 #projectsSec{
     width: 100%;
-    height: 50vh;
+    height: 90vh;
 }
 
 .swiper-slide {
@@ -462,7 +462,6 @@ body{
     justify-content: center;
 }
 
-
 @keyframes svg-text-anim {
        40% {
           stroke-dashoffset: 0;
@@ -476,10 +475,86 @@ body{
           stroke-dashoffset: 0;
           fill: #000000;
         }
-
 }
 
+.projects-bg{
+    padding-top: 20px;
+    height: 75vh;
+    display: flex;
+}
 
+.sabatierImg{
+    background: url("../img/LatestProject/sabatier1.jpg");
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    transition: all 0.2s ease;
+}
+
+.marsFarmingImg{
+    background: rgba(0, 0, 0, 0.6)url("../img/LatestProject/lush-greenery-in-antarctica.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+
+}
+.airlockImg{
+    background: rgba(0, 0, 0, 0.6)url("../img/PastProject/untitled-drawing-e1522640716340.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.heliosImg{
+    background: rgba(0, 0, 0, 0.6)url("../img/PastProject/iac_2019_ben_presentation_helios_4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.proj-card{
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+.proj-card:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+}
+
+.proj-card a{
+    text-decoration: none;
+}
+
+.proj-card .top-half{
+    height: 50%;
+}
+
+.proj-card .bottom-half{
+    color: white;
+    height: 50%;
+}
+
+.proj-card .bottom-half p{
+    padding: 20px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.proj-card .bottom-half h1{
+    text-align: right;
+    padding: 20px;
+    font-size: 64px;
+}
+
+#faqSec{
+    background: red;
+    width: 100%;
+    height: 50vh;
+}
 
 
 @media (max-width: 1100px) {
