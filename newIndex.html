@@ -59,14 +59,34 @@
             </svg>
         </div>-->
     </section>
-
     <section id="aboutSec" class="aboutUs">
         <div class="aboutUs-container">
             <div data-aos="fade-down" class="title-part">
-                <h2>Hello<span style="color: #797878 ">.</span></h2>
+                <div class="pic"></div>
+              
+                <a href="mailto:ubcmarscolony@gmail.com"><div class="box1" >
+                    <i class="fa fa-envelope" aria-hidden="true" ></i>
+                </div></a>
+
+                <a href="https://goo.gl/maps/dzJK8Pv38PnR8PZN7"><div class="box2"></div></a>
+                
+                <a href="https://www.facebook.com/ubcmarscolony/">
+                <div class="social1">
+                  <i class="fa fa-facebook" aria-hidden="true"></i> 
+                </div></a>
+
+                <a href="https://www.instagram.com/ubcmarscolony/">
+                <div class="social2">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div></a>
+
+                <a href="https://www.linkedin.com/company/ubc-mars-colony/about/">
+                <div class="social3">
+                  <i style="padding-left: 5px" class="fa fa-linkedin" aria-hidden="true"></i>
+                </div></a>
             </div>
             <div data-aos="fade-up" class="information">
-                <h2>About us</h2><br>
+                <h2 style="font-size: 64px;">About <span style="color: #ca3636 ">us</span></h2><br>
                 <p>UBC Mars Colony is committed to expanding horizons, both physically and figuratively, as the team consistently does outreach to assist and nurture children in STEM education and to spark interest in this relatively new sector.
                     <br><br>
                     This team was started from an idea in July 2016 from a single person, and quickly gained momentum when 200 people signed up in the first year.
@@ -79,7 +99,7 @@
     <section id="sponsorsSec">
         <div class="aboutUs-container">
             <div data-aos="fade-up" class="information left-side">
-                <h2>To our amazing partners,</h2><br>
+                <h2 style="font-size: 64px;">To our amazing <span style="color: #ca3636 ">partners,</span></h2><br>
                 <p>Thank you! We rely heavily on the support to industry and community partners like all those listed on this page.
                     <br><br>
                     Their generosity has allowed us to achieve more that any of us thought possible.
@@ -88,8 +108,8 @@
                 <button class="custom-btn btn-14 red"><a target="_blank" href="https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC+Mars+Colony%20G2316">Sponsor Us Now!</a> </button>
 
             </div>
-            <div data-aos="fade-down" class="title-part">
-                <h2>Our Partners<span style="color: #797878 ">.</span></h2>
+            <div data-aos="fade-down" class="title-part left-side">
+                <h2 style="font-size: 128px;">Our <span style="color: #ca3636 ">Partners</span><span style="color: #797878 ">.</span></h2>
             </div>
         </div>
     </section>
@@ -162,15 +182,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
      var swiper = new Swiper(".mySwiper", {
-         slidesPerView: 4,
-         slidesPerGroup: 1,
          loop: true,
-         spaceBetween: 30,
          centeredSlides: true,
          autoplay: {
              delay: 2500,
              disableOnInteraction: false,
          },
+         breakpoints: {
+            320: {slidesPerView: 1, spaceBetween: 30},
+            480: {slidesPerView: 1, spaceBetween: 30},
+            640: {slidesPerView: 3, spaceBetween: 30},
+            992: {slidesPerView: 5, spaceBetween: 30},
+        },
       });
     </script>
 
