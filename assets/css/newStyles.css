@@ -41,6 +41,7 @@ body{
 
 .text-part h2{
     font-weight: normal;
+    font-size: xx-large;
 }
 
 .text-part .Engineering-text{
@@ -51,15 +52,15 @@ body{
     font-size: 70px;
     color: white;
 }
-
 /* CSS button */
 .custom-btn {
     margin-top: 10px;
-    width: 150px;
-    height: 50px;
+    width: auto;
+    height: 60px;
     padding: 10px 25px;
     border: 2px solid #ffffff;
     font-family: 'Lato', sans-serif;
+    font-size: medium;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -141,6 +142,7 @@ body{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -235,7 +237,7 @@ body{
 
 .swiper {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
 
       .swiper-slide {
@@ -261,7 +263,6 @@ body{
       .swiper-slide img {
         display: block;
         width: 100%;
-        height: 100%;
         object-fit: cover;
       }
 
@@ -370,24 +371,192 @@ body{
     padding: 0 200px;
 }
 
-.aboutUs-container .information{
-    width: 50%;
-    font-family: "Poppins", sans-serif;
-}
-
-.aboutUs-container .information.left-side{
-    text-align: right;
-}
-
-.aboutUs-container .title-part h2
+.aboutUs-container .containers
 {
-    width: 50%;
-    font-size: 128px;
+  width:550px;
+  height:100%;
+  margin-left:10px;
 }
+
+.aboutUs-container .pic
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:300px;
+  height:300px;
+  position: relative;
+  overflow: hidden;
+  margin-top:-100px;
+  margin-left:135px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.aboutUs-container .pic:before
+{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url('/assets/img/newlogo.png') center center;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.pic:hover , .box1:hover , .box2:hover , .social1:hover , .social2:hover , .social3:hover 
+{
+  box-shadow: 3px 3px 7px #888888;
+  cursor:pointer;
+}
+
+.aboutUs-container .box1
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#3b5998;
+  margin-top:-124px;
+  margin-left:16px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.aboutUs-container .box1
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:100px;
+  height:100px;
+  background-color:#ac5353;
+  margin-top:-124px;
+  margin-left:16px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.aboutUs-container .box1 > i
+{
+  font-size:60px;
+  margin-top:15px;
+  margin-left:15px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+
+.aboutUs-container .box2
+{
+  box-shadow: 6px 6px 7px #888888;
+  position: relative;
+  overflow: hidden;
+  width:194px;
+  height:99px;
+  margin-top:14px;
+  margin-left:78px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.aboutUs-container .box2:before
+{
+  
+  content: '';
+  margin-top:-74px;
+  margin-left:-31px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url('/assets/img/map.png') center center;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.aboutUs-container .social1
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#3b5998;
+  margin-top:-57px;
+  margin-left:305px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.aboutUs-container .social1 > i
+{
+  font-size:60px;
+  margin-top:13px;
+  margin-left:20px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.aboutUs-container .social2
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  margin-top:-142px;
+  margin-left:370px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.aboutUs-container .social2 > i
+{
+  font-size:60px;
+  margin-top:8px;
+  margin-left:13px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.aboutUs-container .social3
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#0072b1;
+  margin-top:-143px;
+  margin-left:435px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.aboutUs-container .social3 > i
+{
+  font-size:60px;
+  margin-top:9px;
+  margin-left:9px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.aboutUs-container content
+{
+  height:100%;
+  width:500px;
+}
+
 
 #sponsorsSec{
-    background: #f1f1f1;
-    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -410,7 +579,7 @@ body{
 }
 
 .swiper {
-        width: 75%;
+        width: 100%;
         height: 100%;
 }
 
@@ -422,7 +591,6 @@ body{
 .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -444,16 +612,6 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
-}
-
-
-.client-logo{
-    width: 128px;
-}
-
-.client-btn img{
-    width: 256px;
-    padding: 10px;
 }
 
 .project-main-title{
@@ -619,16 +777,29 @@ body{
         font-size: 32px;
     }
     .text-part h2{
-        font-size: 16px;
+        font-size: 8px;
     }
 
     .aboutUs-container{
         gap: 10px;
         flex-direction: column;
-        text-align: center;
+        padding: 0 200px;
+        padding-top: 300px;
+    }
+
+    .information{
+        padding-top: 200px;
+    }
+
+    .information.left-side{ 
+        padding-top: 100px;
+    }
+
+    .title-part.left-side{
+        display: none;
     }
 
     .aboutUs-container .title-part h2{
-        font-size: 64px;
+        font-size: 32px;
     }
 }
