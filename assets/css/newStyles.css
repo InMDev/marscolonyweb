@@ -111,6 +111,10 @@ body{
     color: white;
 }
 
+.btn-14.startingred:hover:after{
+
+}
+
 .btn-14:after {
     position: absolute;
     content: "";
