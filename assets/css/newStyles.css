@@ -1,0 +1,555 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: white;
+}
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, 0.7)url("../img/hero-carousel/2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    background-blend-mode: darken;
+    position: relative;
+    transition: all .3s ease;
+}
+
+#hero-section.gone{
+    display: none;
+}
+
+.hero-info{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    margin-top: 20%;
+}
+
+.text-part{
+    color: white;
+}
+
+.text-part h2{
+    font-weight: normal;
+}
+
+.text-part .Engineering-text{
+    color: #ca3636;
+}
+
+.text-part h1{
+    font-size: 70px;
+    color: white;
+}
+
+/* CSS button */
+.custom-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 25px;
+    border: 2px solid #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-btn.btn-14.red{
+    border: 2px solid black;
+}
+.custom-btn.btn-14.startingred{
+    border: 2px solid black;
+}
+
+/* 14 */
+.btn-14 {
+    background: transparent;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-14.red{
+    background: transparent;
+    color: black;
+}
+
+.btn-14.red a{
+    color: black;
+}
+
+.btn-14.red:after {
+    background: #ca3636;
+}
+
+.btn-14.red:hover a{
+    color: white;
+}
+
+.btn-14.startingred{
+    background: #ca3636;
+}
+
+.btn-14.startingred:after{
+    background: #f1f1f1;
+}
+
+.btn-14.startingred a{
+    color: white;
+}
+
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+.btn-14:hover a {
+    color: #000000;
+}
+.btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+.btn-14:active {
+    top: 2px;
+}
+.btn-14 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.navbar{
+    background: transparent;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 50px 0;
+    transition: all 0.3s ease;
+    align-self: center;
+    justify-self: center;
+}
+
+.navbar .logo a{
+    color: white;
+}
+
+.nav-items li a{
+    color: white;
+    position: relative;
+}
+
+.nav-items li a:hover{
+    color: #dedede;
+}
+
+.logo{
+    width: 256px;
+}
+.mLogo{
+    width: 100%;
+    height: auto;
+}
+
+.nav-items li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ca3636;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav-items li a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navbar .content{
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero-section .nav-dash{
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    top: 5%;
+    left: 6%;
+    background: white;
+    animation: futuristicLine 4s ease-in-out infinite;
+    transition: all .3s ease-in-out;
+}
+
+#hero-section .nav-dashbottom{
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    top: 85%;
+    left: 95%;
+    background: white;
+    animation: futuristicLine 3s ease-in-out infinite;
+    animation-direction: reverse;
+    transition: all .3s ease-in-out;
+}
+
+.navbar.sticky .nav-dash{
+    display: none;
+}
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+@keyframes futuristicLine {
+	0% {
+		transform: scaleY(0);
+		transform-origin: 100% 0;
+	}
+	50% {
+		transform: scaleY(1);
+		transform-origin: 100% 0;
+	}
+    51% {
+        transform-origin: 0 100%;
+    }
+    100% {
+		transform: scaleY(0);
+		transform-origin: 0 100%;
+	}
+}
+
+.navbar .nav-items{
+    display: inline-flex;
+}
+
+.navbar .nav-items li{
+    list-style: none;
+}
+
+.navbar .nav-items li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navbar.sticky{
+    background: black;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar.sticky .content{
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar.sticky .content .logo{
+    margin-left: 50px;
+}
+
+.navbar.sticky .content ul{
+    margin-right: 50px;
+}
+
+.icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 76px;
+}
+
+.waves .shape-fill {
+    fill: white;
+}
+
+.aboutUs{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    width: 100%;
+    padding: 0 200px;
+}
+
+.aboutUs-container .information{
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+}
+
+.aboutUs-container .information.left-side{
+    text-align: right;
+}
+
+.aboutUs-container .title-part h2
+{
+    width: 50%;
+    font-size: 128px;
+}
+
+#sponsorsSec{
+    background: #f1f1f1;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sponsors{
+    width: 60%;
+    padding: 10px;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients
+{
+    width: 100%;
+    height: 20vh;
+}
+
+.swiper {
+        width: 75%;
+        height: 100%;
+}
+
+#projectsSec{
+    width: 100%;
+    height: 50vh;
+}
+
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+
+.swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+
+.client-logo{
+    width: 128px;
+}
+
+.client-btn img{
+    width: 256px;
+    padding: 10px;
+}
+
+.project-main-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes svg-text-anim {
+       40% {
+          stroke-dashoffset: 0;
+          fill: transparent;
+        }
+        60% {
+          stroke-dashoffset: 0;
+          fill: #000000;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #000000;
+        }
+
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .logo{
+        width: 20%;
+    }
+    .navbar .nav-items li a{
+        font-size: 15px;
+    }
+    .aboutUs-container
+    {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .logo{
+        width: 256px;
+    }
+    .icon{
+        display: block;
+    }
+    .navbar .nav-items{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        padding: 40px 0;
+        background: #2c3034;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+    .navbar .nav-items.active{
+        right: 0;
+    }
+
+    .navbar .nav-items li{
+        margin-top: 40px;
+    }
+
+    .navbar .nav-items li a{
+        font-size: 16px;
+    }
+
+    #hero-section{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-info{
+        margin-top: 0;
+    }
+    .text-part{
+        text-align: center;
+    }
+    .text-part h1{
+        font-size: 32px;
+    }
+    .text-part h2{
+        font-size: 16px;
+    }
+
+    .aboutUs-container{
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUs-container .title-part h2{
+        font-size: 64px;
+    }
+}
