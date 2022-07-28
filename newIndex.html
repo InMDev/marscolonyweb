@@ -30,7 +30,7 @@
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#aboutSec">About</a></li>
                 <li><a href="#sponsorsSec">Sponsors</a></li>
-                <li><a href="#">Latest Project</a></li>
+                <li><a href="#projectsSec">Latest Project</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact</a></li>
@@ -135,7 +135,7 @@
 
     <!-- Projects page -->
     <section id="projectsSec">
-        <div class="project-main-title">
+        <div data-aos="zoom-in" class="project-main-title">
             <svg width="707.376" height="109.574" viewBox="0 0 707.376 109.574" xmlns="http://www.w3.org/2000/svg">
             <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
                 <path d="M 33.838 63.063 L 3.955 63.063 L 3.955 108.107 L 0 108.107 L 0 1.466 L 33.325 1.466 Q 49.658 1.466 58.704 9.706 A 26.984 26.984 0 0 1 67.034 24.861 A 39.783 39.783 0 0 1 67.749 32.594 A 38.154 38.154 0 0 1 66.706 41.785 A 25.538 25.538 0 0 1 58.923 55.006 A 29.182 29.182 0 0 1 48.043 61.038 Q 43.779 62.381 38.664 62.834 A 60.859 60.859 0 0 1 33.838 63.063 Z M 3.955 5.421 L 3.955 59.108 L 33.325 59.108 Q 47.754 59.108 55.774 52.15 A 22.745 22.745 0 0 0 63.353 38.275 A 33.322 33.322 0 0 0 63.794 32.741 A 33.25 33.25 0 0 0 62.781 24.293 A 23.231 23.231 0 0 0 55.774 12.636 Q 48.678 6.253 36.565 5.517 A 53.47 53.47 0 0 0 33.325 5.421 L 3.955 5.421 Z" id="0" vector-effect="non-scaling-stroke"/>
@@ -150,7 +150,48 @@
         </svg>
         </div>
         <div class="projects-bg">
+            <div data-aos="fade-up" data-aos-delay="200" class="proj-card sabatierImg">
+                <a href="sabatier.html">
+                    <div class="top-half"></div>
+                    <div class="bottom-half">
+                        <h1>SABATIER FUEL PLANT</h1>
+                        <p>The Sabatier Fuel Plant Project aims to propose plans for a full-scale propellant manufacturing plant based on SpaceX's Mars mission architecture.</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="proj-card marsFarmingImg">
+                <a href="farming.html">
+                    <div class="top-half"></div>
+                    <div class="bottom-half">
+                        <h1 style="font-size:58px">MARS FARMING PROJECT</h1>
+                        <p>The Mars Farming project started in October 2020 with the goal of providing a consistent food supply for crewed missions to Mars.</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="proj-card airlockImg">
+                <a href="airlock.html">
+                    <div class="top-half"></div>
+                    <div class="bottom-half">
+                        <h1>AIRLOCK INAUGURATION</h1>
+                        <p>Our first highlight project was to design, prototype, and manufacture a functional and collapsible airlock</p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="proj-card heliosImg">
+                <a href="helios.html">
+                    <div class="top-half"></div>
+                    <div class="bottom-half">
+                        <h1>HELIOS PROJECT</h1>
+                        <p>The HELIOS team identified critical characteristics required for a feasible Lunar extraction operation, as well as significant problems related with its development.</p>
+                    </div>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faqSec">
+
     </section>
 
     <!-- JS Scripts -->
@@ -204,7 +245,7 @@
             entries.forEach(entry =>{
                 if (entry.isIntersecting)
                 {
-                    setTextAnimation(0.3,4.4,1,'ease-in','#000000',false);
+                    setTextAnimation(0.3,3.4,1,'ease-in','#000000',false);
                 }
             })
 
