@@ -1,6 +1,18 @@
 html{
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+    display: flex;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #666666;
+    border-radius: 0 0 10px 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,15 +23,62 @@ body{
     background: white;
 }
 
-#hero-section{
+.sleepTime{
+    display: none;;
+}
+
+.hero-div-intro{
+    animation: fadeAnimation 1s forwards;
+}
+
+.contentish{
+    animation: fadeAnimation 1s forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideBaby {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+
+
+.heroSwiper{
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0, 0.7)url("../img/hero-carousel/2.png");
+    z-index: -5;
+    height: 100%;
+}
+
+.swiper-slide.hero-img{
+    background: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
     background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+#hero-section{
+    width: 100%;
+    height: 101vh;
+    background: transparent;
+
+    display: flex;
     position: relative;
     transition: all .3s ease;
 }
@@ -153,7 +212,7 @@ body{
     z-index: 5;
     width: 100%;
     padding: 50px 0;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
     align-self: center;
     justify-self: center;
 }
@@ -219,6 +278,30 @@ body{
     transition: all .3s ease-in-out;
 }
 
+.circle-line{
+    position: absolute;
+    left: 85%;
+}
+
+.circle {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    transform-origin: center;
+    animation: circleLoad 3000ms ease-in-out infinite alternate;
+}
+
+.circle.tilted{
+    transform-origin: center;
+    transform: rotate(160deg);
+}
+
+@keyframes circleLoad {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
 #hero-section .nav-dashbottom{
     position: absolute;
     width: 2px;
@@ -234,37 +317,6 @@ body{
 .navbar.sticky .nav-dash{
     display: none;
 }
-
-.swiper {
-        width: 100%;
-        height: auto;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
-      }
 
 
 @keyframes futuristicLine {
@@ -333,33 +385,14 @@ body{
 }
 
 
-.waves {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.waves svg {
-    position: relative;
-    display: block;
-    width: calc(111% + 1.3px);
-    height: 76px;
-}
-
-.waves .shape-fill {
-    fill: white;
-}
-
 .aboutUs{
     height: 70vh;
     width: 100%;
+    padding-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #eeeeee;
 }
 
 .aboutUs-container{
@@ -368,7 +401,7 @@ body{
     justify-content: center;
     gap: 75px;
     width: 100%;
-    padding: 0 200px;
+    padding: 0 12.5rem;
 }
 
 .aboutUs-container .containers
@@ -397,7 +430,7 @@ body{
   position: absolute;
   width: 300px;
   height: 300px;
-  background: url('/assets/img/newlogo.png') center center;
+  background: url('../img/newlogo.png') center center;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -469,7 +502,7 @@ body{
   position: absolute;
   width: 300px;
   height: 300px;
-  background: url('/assets/img/map.png') center center;
+  background: url('../img/map.png') center center;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -555,14 +588,14 @@ body{
   width:500px;
 }
 
-
-#sponsorsSec{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.information h2{
+    font-size: 5rem;
 }
+
+.information p{
+    font-size: 1.3rem;
+}
+
 
 .sponsors{
     width: 60%;
@@ -574,71 +607,88 @@ body{
 
 #clients
 {
-    width: 100%;
+    width: 70%;
     height: 20vh;
 }
 
-.swiper {
-        width: 100%;
-        height: 100%;
+#sponsorsSec{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#sponsorBig{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.marsPic{
+    max-width: 32rem;
+}
+
+.sponsor-main-info{
+    width: 50%;
+    overflow: hidden;
+    text-align: left;
+}
+
+.sponsor-main-info h2{
+    font-size: 8rem;
+    line-height: 0.85;
+}
+
+.sponsor-main-info p{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 #projectsSec{
     width: 100%;
-    height: 90vh;
-}
-
-.swiper-slide {
-        text-align: center;
-        font-size: 18px;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-}
-
-.swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background: #151515;
 }
 
 .project-main-title{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    width: 50%;
+    height: 25%;
+    align-self: center;
+    text-align: center;
 }
 
-@keyframes svg-text-anim {
-       40% {
-          stroke-dashoffset: 0;
-          fill: transparent;
-        }
-        60% {
-          stroke-dashoffset: 0;
-          fill: #000000;
-        }
-        100% {
-          stroke-dashoffset: 0;
-          fill: #000000;
-        }
+.project-main-title{
+    font-size: 4.5rem;
+}
+
+.project-main-title h1{
+    font-weight: 10;
+    border-right: .05em solid white;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 .projects-bg{
     padding-top: 20px;
-    height: 75vh;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 75%;
 }
 
 .sabatierImg{
@@ -671,10 +721,8 @@ body{
 }
 
 .proj-card{
-    display: inline-block;
-    flex-direction: column;
-    height: 100%;
-    width: 25%;
+    height: 80%;
+    width: 24%;
     transition: all 0.5s ease-in-out;
 }
 
@@ -688,48 +736,288 @@ body{
 }
 
 .proj-card .top-half{
-    height: 50%;
+    height: 60%;
 }
 
 .proj-card .bottom-half{
+    text-align: right;
     color: white;
-    height: 50%;
+    height: 40%;
 }
 
 .proj-card .bottom-half p{
     padding: 20px;
-    text-align: right;
     font-size: 18px;
 }
 
 .proj-card .bottom-half h1{
-    text-align: right;
     padding: 20px;
-    font-size: 64px;
+    font-size: 3rem;
 }
 
 #faqSec{
-    background: red;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
+
 }
 
+#faqSec h1{
+    font-size: 5rem;
+    text-align: left;
+    padding: 10px;
+}
 
-@media (max-width: 1100px) {
+.faq-container{
+    padding: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Faq cards */
+.card {
+ width: 220px;
+ height: 274px;
+ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+ background: #fff;
+ display: flex;
+ border-radius: 20px;
+ justify-content: center;
+ position: relative;
+ transition: all .4s;
+}
+
+.card::before {
+ content: 'Click To Reveal';
+ letter-spacing: 0.2em;
+ position: absolute;
+ bottom: 8px;
+ left: 20px;
+ color: rgb(51, 51, 51);
+ font-size: 0.8em;
+ font-weight: 700;
+}
+
+.card .coverCard {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card:hover .coverCard {
+ transform: translateY(-30px);
+}
+
+.question{
+    width: 90%;
+    padding: 0.1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.card.show-ans .coverCard{
+    z-index: -1;
+    animation: moveBehind 0.75s forwards;
+    transform-origin: center;
+}
+
+@keyframes moveBehind {
+    0%{
+        transform: translateY(-30px);
+
+    }
+    50%{
+        transform: translateY(-250px) rotate(3deg);
+    }
+    100%{
+        transform: translateY(-20px) rotate(3deg);
+        background: url("../img/bg2.jpg");
+    }
+}
+
+/* Swiper for CLIENTS */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 256px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+.aboutAnchor{
+    display: block;
+    position: absolute;
+    top: 1%;
+}
+
+@media (max-width: 1375px) {
+    .title-part{
+        display: none;
+    }
+
+    .sponsor-main-info h2{
+        font-size: 5rem;
+    }
+
+    #sponsorsSec{
+        width: 100%;
+    }
+
+    #clients{
+        width: 100%;
+    }
+
+    .project-main-title{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #aboutSec{
+        height: auto;
+    }
+
+    #sponsorBig{
+        height: auto;
+    }
+
     .logo{
         width: 20%;
     }
     .navbar .nav-items li a{
         font-size: 15px;
     }
+
     .aboutUs-container
     {
-        padding: 0;
+        padding: 2rem;
+        flex-direction: column;
+        font-size: 1rem;
     }
+
+    .aboutUs{
+        flex-wrap: wrap;
+    }
+
+    #sponsorsSec{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sponsor-main-info{
+        text-align: center;
+        width: 100%;
+    }
+
+    /* For Fancy Animations */
+    .circle-line{
+        display: none;
+        left: 0;
+    }
+
+
+
+    .proj-card{
+        width: 25%;
+        gap: 0;
+    }
+
+    #faqSec .faq-container h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+    .projects-bg {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        height: 50%;
+    }
+    .proj-card{
+        width: 100%;
+    }
+
+    .top-half{
+        height: 0;
+        display: none;
+    }
+
+    .proj-card .bottom-half{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #projectsSec{
+        height: auto;
+    }
+
+
 
 }
 
 @media (max-width: 750px) {
+
+    .marsPic{
+        max-width: 15rem;
+    }
+
     .logo{
         width: 256px;
     }
@@ -747,7 +1035,7 @@ body{
         padding: 40px 0;
         background: #2c3034;
         text-align: center;
-        transition: all .3s ease;
+        transition: all 1s ease;
     }
 
     .navbar .nav-items.active{
@@ -782,24 +1070,79 @@ body{
 
     .aboutUs-container{
         gap: 10px;
-        flex-direction: column;
-        padding: 0 200px;
-        padding-top: 300px;
     }
 
-    .information{
-        padding-top: 200px;
+    .information h2{
+        font-size: 48px;
     }
 
-    .information.left-side{ 
-        padding-top: 100px;
+    .information p{
+        font-size: 16px;
     }
 
-    .title-part.left-side{
+    #sponsorsSec h2{
+        font-size: 48px;
+    }
+
+    #sponsorsSec p{
+        font-size: 16px;
+    }
+
+    .swiper-slide img {
+        width: 128px;
+    }
+    .project-main-title {
+        padding-top: 20px;
+        font-size: 1.4rem;
+    }
+
+    .projects-bg {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        height: 50%;
+    }
+    .proj-card{
+        width: 100%;
+    }
+
+    .top-half{
+        height: 0;
         display: none;
     }
 
-    .aboutUs-container .title-part h2{
-        font-size: 32px;
+    .proj-card .bottom-half{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    #projectsSec{
+        height: auto;
+        padding: 1rem;
+    }
+
+    .faq-container{
+        padding: 3rem;
+    }
+
+    /* Faq cards */
+    .card {
+        width: 80%;
+    }
+
+    .card:hover .coverCard {
+        transform: translateY(-30px);
+    }
+
+    .navbar.sticky{
+        background: rgba(0,0,0, 0.6);
+        padding: 0;
+    }
+
+    .navbar.sticky .content .logo{
+        margin: 0;
+    }
+
 }
