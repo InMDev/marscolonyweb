@@ -28,11 +28,11 @@ body{
 }
 
 .hero-div-intro{
-    animation: fadeAnimation 1s forwards;
+    animation: fadeAnimation 2s forwards;
 }
 
 .contentish{
-    animation: fadeAnimation 1s forwards;
+    animation: fadeAnimation 2s forwards;
 }
 
 @keyframes fadeAnimation {
@@ -278,9 +278,10 @@ body{
     transition: all .3s ease-in-out;
 }
 
+
 .circle-line{
+    left: 80%;
     position: absolute;
-    left: 85%;
 }
 
 .circle {
@@ -386,7 +387,7 @@ body{
 
 
 .aboutUs{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     padding-top: 10%;
     display: flex;
@@ -589,11 +590,11 @@ body{
 }
 
 .information h2{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .information p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
@@ -607,7 +608,7 @@ body{
 
 #clients
 {
-    width: 70%;
+    width: 90%;
     height: 20vh;
 }
 
@@ -630,7 +631,7 @@ body{
 }
 
 .marsPic{
-    max-width: 32rem;
+    max-width: 28rem;
 }
 
 .sponsor-main-info{
@@ -640,12 +641,12 @@ body{
 }
 
 .sponsor-main-info h2{
-    font-size: 8rem;
+    font-size: 5rem;
     line-height: 0.85;
 }
 
 .sponsor-main-info p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -736,13 +737,13 @@ body{
 }
 
 .proj-card .top-half{
-    height: 60%;
+    height: 50%;
 }
 
 .proj-card .bottom-half{
     text-align: right;
     color: white;
-    height: 40%;
+    height: 50%;
 }
 
 .proj-card .bottom-half p{
@@ -757,7 +758,7 @@ body{
 
 #faqSec{
     width: 100%;
-    height: 80vh;
+    height: auto;
 
 }
 
@@ -765,6 +766,7 @@ body{
     font-size: 5rem;
     text-align: left;
     padding: 10px;
+    z-index: -2;
 }
 
 .faq-container{
@@ -847,6 +849,70 @@ body{
     transform-origin: center;
 }
 
+footer{
+    background: #1f1f1f;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+    bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.footer-social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.footer-social li{
+    margin: 0 10px;
+}
+
+.footer-social a{
+    text-decoration: none;
+    color: white;
+    padding: 0.6rem;
+    background: transparent;
+    border: 1px white solid;
+    transition: color 0.3s ease;
+}
+
+.footer-social a i{
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.footer-social a:hover i{
+    color: black;
+}
+
+.footer-social a:hover{
+    background: white;
+}
+
+.footer-copyright{
+    background: #1f1f1f;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-copyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
 @keyframes moveBehind {
     0%{
         transform: translateY(-30px);
@@ -888,7 +954,7 @@ body{
 
 .swiper-slide img {
     display: block;
-    width: 256px;
+    width: 192px;
     height: 100%;
     object-fit: cover;
 }
@@ -901,6 +967,23 @@ body{
     display: block;
     position: absolute;
     top: 1%;
+}
+
+@media (max-width: 1500px) {
+    .projects-bg{
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .proj-card .top-half{
+        height: 50%;
+    }
+        /* For Fancy Animations */
+    .circle-line{
+        display: none;
+        left: 0;
+    }
 }
 
 @media (max-width: 1375px) {
@@ -963,24 +1046,15 @@ body{
         width: 100%;
     }
 
-    /* For Fancy Animations */
-    .circle-line{
-        display: none;
-        left: 0;
-    }
-
-
-
-    .proj-card{
-        width: 25%;
-        gap: 0;
-    }
-
     #faqSec .faq-container h1{
         text-align: center;
         font-size: 2.5rem;
     }
 
+    .proj-card{
+        width: 25%;
+        gap: 0;
+    }
 
     .projects-bg {
         flex-direction: row;
@@ -1007,9 +1081,6 @@ body{
     #projectsSec{
         height: auto;
     }
-
-
-
 }
 
 @media (max-width: 750px) {
@@ -1057,6 +1128,7 @@ body{
 
     .hero-info{
         margin-top: 0;
+        padding: 0;
     }
     .text-part{
         text-align: center;
@@ -1065,7 +1137,7 @@ body{
         font-size: 32px;
     }
     .text-part h2{
-        font-size: 8px;
+        font-size: 16px;
     }
 
     .aboutUs-container{
@@ -1120,7 +1192,6 @@ body{
 
     #projectsSec{
         height: auto;
-        padding: 1rem;
     }
 
     .faq-container{

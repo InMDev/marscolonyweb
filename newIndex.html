@@ -36,7 +36,7 @@
                 <li><a onclick="mainPageGo('sponsorBig')" href="#sponsorBig">Sponsors</a></li>
                 <li><a onclick="mainPageGo('projectsSec')" href="#projectsSec">Latest Project</a></li>
                 <li><a onclick="mainPageGo('faqSec')" href="#faqSec">FAQ</a></li>
-                <li><a onclick="mainPageGo('aboutBreakSec')" href="#aboutBreakSec">Contact</a></li>
+                <li><a onclick="mainPageGo('contact')" href="#contact">Contact</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -49,16 +49,16 @@
         <div class="nav-dash"></div>
         <div class="nav-dashbottom"></div>
         <svg style="top: 20%" class="circle-line" height="250" width="250">
-            <circle transform="rotate(280)" class="circle" cx="50%" cy="50%" r="70" stroke="white" fill="transparent"/>
-            <circle transform="rotate(120)" class="circle" cx="50%" cy="50%" r="65" stroke="white" fill="transparent"/>
-            <circle class="circle tilted" cx="50%" cy="50%" r="40" stroke="white" fill="transparent"/>
-            <circle transform="rotate(30)" class="circle" cx="50%" cy="50%" r="35" stroke="white" fill="transparent"/>
+                <circle transform="rotate(280)" class="circle" cx="50%" cy="50%" r="70" stroke="white" fill="transparent"/>
+                <circle transform="rotate(120)" class="circle" cx="50%" cy="50%" r="65" stroke="white" fill="transparent"/>
+                <circle class="circle tilted" cx="50%" cy="50%" r="40" stroke="white" fill="transparent"/>
+                <circle transform="rotate(30)" class="circle" cx="50%" cy="50%" r="35" stroke="white" fill="transparent"/>
 
-        </svg>
+            </svg>
         <svg style="top: 40%" class="circle-line" height="250" width="250">
-            <circle style="animation-duration: 4s" transform="rotate(60)" class="circle" cx="50%" cy="50%" r="50" stroke="white" fill="transparent"/>
-            <circle style="animation-duration: 2s" class="circle tilted" cx="50%" cy="50%" r="45" stroke="white" fill="transparent"/>
-        </svg>
+                <circle style="animation-duration: 4s" transform="rotate(60)" class="circle" cx="50%" cy="50%" r="50" stroke="white" fill="transparent"/>
+                <circle style="animation-duration: 2s" class="circle tilted" cx="50%" cy="50%" r="45" stroke="white" fill="transparent"/>
+            </svg>
         <div class="heroSwiper myHeroSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide hero-img" style="background-image: url(assets/img/hero-carousel/1.png)" ></div>
@@ -124,7 +124,7 @@
 
     <section id="sponsorBig">
         <section id="sponsorsSec">
-            <img class="marsPic" src="assets/img/mars.webp" alt="">
+            <img data-aos="fade-left" class="marsPic" src="assets/img/station-sponsor.png" alt="">
                 <div class="sponsor-main-info">
                     <h2 data-aos="zoom-out">To our<br><span style="color: #ca3636;">partners,</span></h2><br><br>
                     <p data-aos="zoom-in">Thank you! We rely heavily on the support to industry and community partners like all those listed on this page.
@@ -160,8 +160,8 @@
         <div data-aos-delay="200" data-aos="fade-up" class="project-main-title">
             <h1>Our Projects.</h1>
         </div>
-        <div data-aos="fade-up" class="projects-bg">
-            <div class="proj-card sabatierImg">
+        <div class="projects-bg">
+            <div data-aos="fade-up" class="proj-card sabatierImg">
                 <a href="sabatier.html">
                     <div class="top-half"></div>
                     <div class="bottom-half">
@@ -170,7 +170,7 @@
                     </div>
                 </a>
             </div>
-            <div class="proj-card marsFarmingImg">
+            <div data-aos-delay="150" data-aos="fade-up" class="proj-card marsFarmingImg">
                 <a href="farming.html">
                     <div class="top-half"></div>
                     <div class="bottom-half">
@@ -179,7 +179,7 @@
                     </div>
                 </a>
             </div>
-            <div class="proj-card airlockImg">
+            <div data-aos-delay="300" data-aos="fade-up" class="proj-card airlockImg">
                 <a href="airlock.html">
                     <div class="top-half"></div>
                     <div class="bottom-half">
@@ -188,7 +188,7 @@
                     </div>
                 </a>
             </div>
-            <div class="proj-card heliosImg">
+            <div data-aos-delay="450" data-aos="fade-up" class="proj-card heliosImg">
                 <a href="helios.html">
                     <div class="top-half"></div>
                     <div class="bottom-half">
@@ -201,10 +201,10 @@
     </section>
     <!-- FAQ -->
     <section id="faqSec">
-            <div class="faq-container">
+            <div data-aos="fade-in" class="faq-container">
                 <h1>Frequently<br>Asked<br>Questions</h1>
 
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>No.</strong> We consider people from all backgrounds, the most important requirement is an eagerness to learn!</p>
                     </div>
@@ -214,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>No.</strong> We are a passionate group of volunteers.</p>
                     </div>
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>Yes,</strong> first years are welcome to apply, there are first years who successfully join UBC Mars Colony every year.</p>
                     </div>
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>Yes.</strong> However, this is limited to non-hands on activities. This is because UBC ApSc is not able to grant the same safety insurance which typical UBC student members receive after their training. Activities such as simulations, CAD designs, and coding are allowed.</p>
                     </div>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>No.</strong> We consider people from all backgrounds, the most important requirement is an eagerness to learn!</p>
                     </div>
@@ -254,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>No.</strong> We are a passionate group of volunteers.</p>
                     </div>
@@ -264,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>Yes,</strong> first years are welcome to apply, there are first years who successfully join UBC Mars Colony every year.</p>
                     </div>
@@ -274,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>Yes.</strong> However, this is limited to non-hands on activities. This is because UBC ApSc is not able to grant the same safety insurance which typical UBC student members receive after their training. Activities such as simulations, CAD designs, and coding are allowed.</p>
                     </div>
@@ -284,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="answer">
                         <p><strong>No.</strong> We consider people from all backgrounds, the most important requirement is an eagerness to learn!</p>
                     </div>
@@ -297,7 +297,35 @@
             </div>
 
     </section>
+
+        <!-- Footer Here -->
+   <footer id="contact">
+       <div class="footer-content">
+           <ul class="footer-social">
+               <!-- Email -->
+               <li><a target="_blank" href="mailto:ubcmarscolony@gmail.com"><i class="fas fa-envelope"></i></a></li>
+               
+               <!-- Facebook -->
+               <li><a target="_blank" href="https://www.facebook.com/ubcmarscolony/"><i class="fab fa-facebook-f"></i></a></li>
+               <!-- Twitter -->
+               <li><a target="_blank" href="https://twitter.com/ubc_mars_colony?lang=en"><i
+                       class="fab fa-twitter"></i></a></li>
+               <!-- Instagram -->
+               <li><a target="_blank" href="https://www.instagram.com/ubcmarscolony/?hl=en"><i class="fab fa-instagram"></i></a></li>
+               <!-- Linkedin -->
+               <li><a target="_blank" href="https://www.linkedin.com/company/ubc-mars-colony/"><i class="fab fa-linkedin-in"></i></a></li>
+           </ul>
+       </div>
+       <div class="footer-copyright">
+           <p>&copy;2022 Copyright: UBCmarscolony.com</p>
+       </div>
+   </footer>
+
+
+
+
     </div>
+
 
     <!-- JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
