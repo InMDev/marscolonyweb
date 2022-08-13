@@ -48,7 +48,7 @@
 .scroll-icon {
 	position: absolute;
  	left: 50%;
-  bottom: 400px;
+  bottom: 20px;
   padding: 0 10px;
   	-webkit-transform: translateX(-50%);
   	    -ms-transform: translateX(-50%);
