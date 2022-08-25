@@ -305,9 +305,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-content .btn-get-started {
     background: none;
     border: 2px solid;
-    border-image: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%) 1
+    /*border-image: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%) 1*/
+    margin-top: 550px;
 }
 
+@media (max-width: 576px) {
+    #hero .hero-content .btn-get-started {
+        margin-top: 400px;
+    }
+}
 #hero .hero-content .btn-get-started:hover {
     background: #fff;
     color: #a83939
@@ -326,14 +332,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-slider {
     z-index: 8;
     height: 90vh;
-    -webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
-    animation: kenburns-top 5s ease-in-out infinite alternate-reverse both
+    /*-webkit-animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;
+    animation: kenburns-top 5s ease-in-out infinite alternate-reverse both;*/
 }
 
 #hero .hero-slider::before {
     content: "";
-    background: linear-gradient(90deg, #bd413f, #4e1f1d);
-    mix-blend-mode: multiply;
+    /*background: linear-gradient(90deg, #bd413f, #4e1f1d);
+    mix-blend-mode: multiply;*/
     position: absolute;
     height: 100%;
     width: 100%;
