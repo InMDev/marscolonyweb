@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-content .btn-get-started {
-    background: none;
+    background: #a83939;
     border: 2px solid;
     /*border-image: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%) 1*/
     margin-top: 550px;
