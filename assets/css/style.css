@@ -58,10 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header {
-    height: 100px;
+    height: 75px;
     background: #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06);
-    position: fixed
 }
 
 #header #logo h1 {
@@ -249,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     position: relative;
     background-size: cover;
-    padding: 100px 0 0 0
+    padding: 70px 0 0 0
 }
 
 #hero .hero-content {
@@ -544,11 +543,9 @@ section {
 }
 
 #sponsor {
-    padding: 9% 0;
+    padding: 9.5% 0;
     background-image: url('../img/Promotion Kit_IAC2022/IAC2022_Banner-01.webp');
-    min-height: 120px;
     background-size: cover;
-    background-position: 50% 50%
 }
 
 #about {
