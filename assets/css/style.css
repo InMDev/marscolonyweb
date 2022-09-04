@@ -10,6 +10,11 @@ a {
     transition: 0.5s
 }
 
+@font-face {
+    font-family: "MarsCol";
+    src: url(../GN-Koharuiro_Sunray.ttf);
+}
+
 a:hover, a:active, a:focus {
     color: #a83939;
     outline: none;
@@ -247,10 +252,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero {
     position: relative;
-    background-size: cover;
-    padding: 70px 0 0 0
+    padding: 70px 0 0 0;
+    height: 100vh;
 }
 
+/*
 #hero .hero-content {
     position: absolute;
     bottom: 0;
@@ -287,10 +293,51 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 8vw;
     color: #fff
 }
+*/
+
+/* NEW HERO STUFF */
+#hero .background-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/hero-carousel/RecruitmentBg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .background-hero .NowOpen{
+    font-size: 8rem;
+    font-family: MarsCol;
+}
+
+#hero .banner-logo{
+    max-width: 512px;
+    width: 100%;
+    padding: 1rem;
+}
+
+#hero .background-hero .applicationOpen{
+    font-size: 5.75rem;
+}
+
+#hero .background-hero h3{
+    color: white;
+    font-size: 3rem;
+    font-family: MarsCol;
+    line-height: 0.9;
+}
+
+
+
 
 #hero .hero-content .btn-get-started, #hero .hero-content .btn-projects {
     font-family: "Raleway", sans-serif;
-    font-size: 2vh;
     font-weight: 700;
     letter-spacing: 1px;
     display: inline-block;
@@ -305,14 +352,43 @@ h1, h2, h3, h4, h5, h6 {
     background: #a83939;
     border: 2px solid;
     /*border-image: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%) 1*/
-    margin-top: 550px;
 }
 
-@media (max-width: 576px) {
-    #hero .hero-content .btn-get-started {
-        margin-top: 400px;
+.banner-text{
+    color: white;
+    font-family: MarsCol;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #b0252c;
+    background-color: #b0252c;
+    font-size: 5rem;
+    padding: 0 15px;
+}
+
+@media (max-width: 620px){
+    #hero .background-hero .NowOpen{
+        font-size: 4rem;
+    }
+
+    #hero .background-hero h3{
+        font-size: 1.5rem;
+    }
+
+    #hero .background-hero .applicationOpen{
+        font-size: 2.9rem;
+    }
+
+    #hero .background-hero .btn-get-started {
+        margin-top: -7%;
+        font-size: 1rem;
+    }
+
+    .banner-text{
+        font-size: 2.5rem;
     }
 }
+
+
 #hero .hero-content .btn-get-started:hover {
     background: #fff;
     color: #a83939
@@ -468,20 +544,20 @@ section {
     margin: 0
 }
 
-.btn-get-started, .btn-get-started {
+.btn-get-started {
     background: none;
     border: 2px solid;
     border-color: #fff;
     font-family: "Raleway", sans-serif;
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 32px;
     border-radius: 2px;
     transition: 0.5s;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    margin-top: -2%;
+    margin-bottom: 2%;
     color: #fff
 }
 
