@@ -333,7 +333,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0.9;
 }
 
-
+.extra-info{
+    color: white;
+    text-shadow: 2px 2px #000;
+    font-size: 1.5rem;
+}
 
 
 #hero .hero-content .btn-get-started, #hero .hero-content .btn-projects {
@@ -385,6 +389,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .banner-text{
         font-size: 2.5rem;
+    }
+
+    .extra-info{
+        font-size: 1rem;
     }
 }
 
