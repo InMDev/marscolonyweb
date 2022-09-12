@@ -337,6 +337,29 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-shadow: 2px 2px #000;
     font-size: 1.5rem;
+    border: 1px solid white;
+    padding: 0 1rem;
+}
+
+.extra-info:hover{
+    background: white;
+    color: #a83939;
+    text-shadow: none;
+    transition: all 0.3s;
+}
+
+.info-session{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.info-session h1{
+    color: white;
+    font-family: "MarsCol";
 }
 
 
