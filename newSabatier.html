@@ -15,9 +15,6 @@
         <div class="content">
             <div class="logo"><a href="index.html"><img class="mLogo" src="assets/img/Smaller-Logo.png" alt=""></a></div>
             <ul class="nav-items" >
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#clients">Sponsors</a></li>
@@ -617,13 +614,17 @@
             const navbar = document.querySelector(".navbar")
                 const navItem = document.querySelector(".nav-items")
                 const openNav = document.querySelector(".menu-btn")
-                const closeNav = document.querySelector(".cancel-btn")
+                const navIcon = document.querySelector(".fas.fa-bars")
 
                 openNav.onclick = () => {
-                    navItem.classList.add("active")
-                }
-                closeNav.onclick = () => {
-                    navItem.classList.remove("active")
+                    navItem.classList.toggle("active")
+                    if (navIcon.className == "fas fa-times")
+                    {
+                        navIcon.className = "fas fa-bars"
+                    }
+                    else{
+                        navIcon.className = "fas fa-times"
+                    }
                 }
     </script>
 </body>

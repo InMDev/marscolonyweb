@@ -811,7 +811,8 @@ nav{
 }
 
 .detail-img img{
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .details-tabs{
@@ -898,6 +899,10 @@ footer{
 }
 
 @media (max-width: 750px) {
+    .title-seperator h1{
+      font-size: 1.3rem;
+    }
+
     .logo{
         width: 256px;
     }
@@ -907,11 +912,9 @@ footer{
     .navbar .nav-items{
         position: fixed;
         top: 0;
-        right: -100%;
         height: 100vh;
         width: 100%;
-        max-width: 350px;
-        display: block;
+        display: none;
         background: white;
         text-align: center;
         transition: all 1s ease;
@@ -920,6 +923,7 @@ footer{
     .navbar .nav-items.active{
         right: 0;
         background: white;
+        display: block;
     }
 
     .navbar .nav-items li{
