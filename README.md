@@ -105,3 +105,5 @@ To View Different Devices Display
 [Inzaghi](https://github.com/InMDev)
 
 [Patrick](https://github.com/typer234)
+
+[Brian](https://github.com/BrianAnakPintar)
