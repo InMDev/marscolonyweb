@@ -107,3 +107,4 @@ To View Different Devices Display
 [Patrick](https://github.com/typer234)
 
 [Brian](https://github.com/BrianAnakPintar)
+--- New website is being made
