@@ -262,7 +262,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
     position: relative;
     background-size: cover;
-    padding: 100px 0 0 0
+    /*padding: 100px 0 0 0; this old */
+    padding: 70px 0 0 0;
+    height: 100vh;
 }
 
 #hero .hero-content {
@@ -1147,4 +1149,112 @@ ul {
 
 #gallery {
     background-image: url(../img/bg2.webp)
+}
+
+/* THIS IS THE SECTION FOR RECRUITMENTS */
+/* NEW HERO STUFF */
+#hero .background-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/hero-carousel/recruitment-elec.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#hero .background-hero .NowOpen{
+    font-size: 2.5rem;
+    font-family: MarsCol;
+}
+
+#hero .banner-logo{
+    max-width: 512px;
+    width: 100%;
+    padding: 1rem;
+}
+
+#hero .background-hero .applicationOpen{
+    font-size: 5rem;
+    line-height: 2rem;
+}
+
+#hero .background-hero h3{
+    color: white;
+    font-size: 3rem;
+    font-family: MarsCol;
+    line-height: 0.9;
+}
+
+.deadline{
+    color: white;
+    font-weight: bold;
+}
+
+.banner-text{
+    color: white;
+    font-family: MarsCol;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #b0252c;
+    background-color: #b0252c;
+    font-size: 5rem;
+    padding: 0 15px;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 750px) {
+    #hero .background-hero .applicationOpen{
+        font-size: 4rem;
+    }
+
+    #hero .background-hero .NowOpen{
+        font-size: 2rem;
+    }
+
+    #hero .background-hero h3{
+        font-size: 1.5rem;
+    }
+
+    .banner-text{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 620px){
+    .background-hero{
+        gap: 1rem;
+    }
+
+    #hero .background-hero .NowOpen{
+        font-size: 1.2rem;
+    }
+
+    #hero .background-hero h3{
+        font-size: 1.5rem;
+    }
+
+    #hero .background-hero .applicationOpen{
+        font-size: 2rem;
+    }
+
+    #hero .background-hero .btn-get-started {
+        margin-top: -7%;
+        font-size: 1rem;
+    }
+
+    .banner-text{
+        font-size: 2.5rem;
+    }
+
+    .deadline{
+        font-size: 1rem;
+    }
 }
